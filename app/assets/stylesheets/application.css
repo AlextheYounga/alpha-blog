@@ -1,0 +1,296 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+<style title="page-styles" type="text/css" data-page-type="main_desktop">
+body { color:#676767; }
+a {
+  color:#72cf6b;
+  text-decoration:none;
+}
+#lp-pom-root {
+  display:block;
+  background:rgba(255,255,255,1);
+  -pie-background:rgba(255,255,255,1);
+  border-style:none;
+  margin:auto;
+  padding-top:0px;
+  
+  border-radius:0px;
+  min-width:960px;
+  height:805px;
+}
+body, html {
+    height: 100%;
+}
+
+#lp-pom-block-8 {
+  display:block;
+  background:rgba(119,155,154,1);
+  background-image:url(//d9hhrg4mnvzow.cloudfront.net/unbouncepages.com/ruby-home-page/9dcd2db3-20160524-120516.jpg);
+  background-repeat:no-repeat;
+  background-position:center center;
+  -webkit-background-size:cover;
+  -moz-background-size:cover;
+  -o-background-size:cover;
+  background-size:cover;
+  -ms-behavior:url(//d9hhrg4mnvzow.cloudfront.net/backgroundsize.min.htc);
+  behavior:url(//d9hhrg4mnvzow.cloudfront.net/backgroundsize.min.htc);
+  border-style:none;
+  margin-left:auto;
+  margin-right:auto;
+  margin-bottom:0px;
+  border-radius:0px;
+  height: 100%;
+  width:100%;
+  position:relative;
+}
+
+#lp-pom-text-23 {
+  display:block;
+  background:rgba(255,255,255,0);
+  -pie-background:rgba(255,255,255,0);
+  border-style:none;
+  behavior:url(//d9hhrg4mnvzow.cloudfront.net/PIE.htc);
+  border-radius:0px;
+  left:34px;
+  top:179px;
+  z-index:3;
+  width:541px;
+  height:58px;
+  position:absolute;
+}
+#lp-pom-text-145 {
+  display:block;
+  background:rgba(255,255,255,0);
+  -pie-background:rgba(255,255,255,0);
+  border-style:none;
+  behavior:url(//d9hhrg4mnvzow.cloudfront.net/PIE.htc);
+  border-radius:0px;
+  left:62px;
+  top:237px;
+  z-index:2;
+  width:486px;
+  height:34px;
+  position:absolute;
+}
+#lp-pom-block-14 {
+  display:block;
+  background:rgba(255,255,255,1);
+  -pie-background:rgba(255,255,255,1);
+  border-style:none;
+  margin-left:auto;
+  margin-right:auto;
+  margin-bottom:0px;
+  behavior:url(//d9hhrg4mnvzow.cloudfront.net/PIE.htc);
+  border-radius:0px;
+  width:100%;
+  height:55px;
+  position:relative;
+}
+#lp-pom-text-69 {
+  display:block;
+  background:rgba(255,255,255,0);
+  -pie-background:rgba(255,255,255,0);
+  border-style:none;
+  behavior:url(//d9hhrg4mnvzow.cloudfront.net/PIE.htc);
+  border-radius:0px;
+  left:0px;
+  top:769px;
+  z-index:1;
+  width:960px;
+  height:18px;
+  position:absolute;
+}
+#lp-pom-root .lp-positioned-content {
+  top:0px;
+  width:960px;
+  margin-left:-480px;
+}
+#lp-pom-block-8 .lp-pom-block-content {
+  margin-left:auto;
+  margin-right:auto;
+  width:960px;
+  height:750px;
+}
+#lp-pom-block-14 .lp-pom-block-content {
+  margin-left:auto;
+  margin-right:auto;
+  width:960px;
+  height:55px;
+}
+#lp-pom-root-color-overlay {
+  position:absolute;
+  background:none;
+  top:0;
+  width:100%;
+  height:805px;
+  min-height:100%;
+}
+#lp-pom-block-8-color-overlay {
+  position:absolute;
+  background:none;
+  height:750px;
+  width:100%;
+}
+#lp-pom-block-14-color-overlay {
+  position:absolute;
+  background:none;
+  height:55px;
+  width:100%;
+}
+</style>
+<style title="page-styles" type="text/css" data-page-type="main_mobile">
+@media only screen and (max-width:600px) {
+  #lp-pom-root {
+    display:block;
+    background:rgba(255,255,255,1);
+    -pie-background:rgba(255,255,255,1);
+    border-style:none;
+    margin:auto;
+    padding-top:0px;
+    behavior:url(//d9hhrg4mnvzow.cloudfront.net/PIE.htc);
+    border-radius:0px;
+    min-width:320px;
+    height:650px;
+  }
+  #lp-pom-block-8 {
+    display:block;
+    background:rgba(119,155,154,1);
+    background-image:url(//d9hhrg4mnvzow.cloudfront.net/unbouncepages.com/ruby-home-page/9dcd2db3-20160524-120516.jpg);
+    background-repeat:no-repeat;
+    background-position:center center;
+    -webkit-background-size:cover;
+    -moz-background-size:cover;
+    -o-background-size:cover;
+    background-size:cover;
+    -ms-behavior:url(//d9hhrg4mnvzow.cloudfront.net/backgroundsize.min.htc);
+    behavior:url(//d9hhrg4mnvzow.cloudfront.net/backgroundsize.min.htc);
+    border-style:none;
+    margin-left:auto;
+    margin-right:auto;
+    margin-bottom:0px;
+    border-radius:0px;
+    width:100%;
+    height:588px;
+    position:relative;
+  }
+  #lp-pom-text-23 {
+    display:block;
+    background:rgba(255,255,255,0);
+    -pie-background:rgba(255,255,255,0);
+    border-style:none;
+    behavior:url(//d9hhrg4mnvzow.cloudfront.net/PIE.htc);
+    border-radius:0px;
+    left:0px;
+    top:330px;
+    z-index:3;
+    width:400px;
+    height:116px;
+    transform:scale(0.8);
+    transform-origin:0 0;
+    -webkit-transform:scale(0.8);
+    -webkit-transform-origin:0 0;
+    position:absolute;
+  }
+  #lp-pom-text-145 {
+    display:block;
+    background:rgba(255,255,255,0);
+    -pie-background:rgba(255,255,255,0);
+    border-style:none;
+    behavior:url(//d9hhrg4mnvzow.cloudfront.net/PIE.htc);
+    border-radius:0px;
+    left:44px;
+    top:431px;
+    z-index:2;
+    width:289px;
+    height:68px;
+    transform:scale(0.8);
+    transform-origin:0 0;
+    -webkit-transform:scale(0.8);
+    -webkit-transform-origin:0 0;
+    position:absolute;
+  }
+  #lp-pom-block-14 {
+    display:block;
+    background:rgba(255,255,255,1);
+    -pie-background:rgba(255,255,255,1);
+    border-style:none;
+    margin-left:auto;
+    margin-right:auto;
+    margin-bottom:0px;
+    behavior:url(//d9hhrg4mnvzow.cloudfront.net/PIE.htc);
+    border-radius:0px;
+    width:100%;
+    height:62px;
+    position:relative;
+  }
+  #lp-pom-text-69 {
+    display:block;
+    background:rgba(255,255,255,0);
+    -pie-background:rgba(255,255,255,0);
+    border-style:none;
+    behavior:url(//d9hhrg4mnvzow.cloudfront.net/PIE.htc);
+    border-radius:0px;
+    left:20px;
+    top:608px;
+    z-index:1;
+    width:280px;
+    height:18px;
+    position:absolute;
+  }
+  body { color:#676767; }
+  a {
+    color:#72cf6b;
+    text-decoration:none;
+  }
+  #lp-pom-root .lp-positioned-content {
+    top:0px;
+    width:320px;
+    margin-left:-160px;
+  }
+  #lp-pom-block-8 .lp-pom-block-content {
+    margin-left:auto;
+    margin-right:auto;
+    width:320px;
+    height:588px;
+  }
+  #lp-pom-block-14 .lp-pom-block-content {
+    margin-left:auto;
+    margin-right:auto;
+    width:320px;
+    height:62px;
+  }
+  #lp-pom-root-color-overlay {
+    position:absolute;
+    background:none;
+    top:0;
+    width:100%;
+    height:650px;
+    min-height:100%;
+  }
+  #lp-pom-block-8-color-overlay {
+    position:absolute;
+    background:none;
+    height:588px;
+    width:100%;
+  }
+  #lp-pom-block-14-color-overlay {
+    position:absolute;
+    background:none;
+    height:62px;
+    width:100%;
+  }
+}
+</style>
