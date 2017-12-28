@@ -2,9 +2,9 @@ Rails.application.routes.draw do
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
-root 'pages#home'  #This is the route for the homepage
+root 'pages#home'  #This is the route for the homepage; using root makes the server immediately redirect to this page
 
-get 'pages/about', to: 'pages#about' #This is the about page
+get 'about', to: 'pages#about' #This is the about page
 
 
 
