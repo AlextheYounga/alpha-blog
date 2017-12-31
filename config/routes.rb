@@ -3,9 +3,16 @@ Rails.application.routes.draw do
   # See how all your routes lay out with "rake routes".
 
 root 'pages#home'  #This is the route for the homepage; using root makes the server immediately redirect to this page
-
 get 'about', to: 'pages#about' #This is the about page
 
+resources :articles #this simple term resources allowed a:
+#new-article path
+#a post to create articles
+#an edit article path 
+#a patch to update articles 
+#a show-articles path
+#a delete article path
+#and index article path
 
 
 

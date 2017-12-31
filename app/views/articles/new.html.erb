@@ -1,0 +1,33 @@
+<head>
+    <title>Placement insert</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+
+<h1>Create an Article</h1>
+
+</head>
+
+<%= form_for @article do |f| %>
+<!--the form_for helpers are rails view helpers for generating form markup; read more at guides.rubyonrails.org/form_helpers.html -->
+<!--The @article instance variable will be initiated in the articles_controller.rb -->
+  <p>
+    <%= f.label :title %> </br> <!--This </br> places the text box below "title" -->
+    <%= f.text_field :title %>
+  </p>
+  
+  <p>
+    <%= f.label :description %> </br>
+    <%= f.text_area :description%>
+    
+    <!--the text_area creates a bigger box than text_field -->
+    
+  </p>
+    <%= f.submit %>
+  <p>
+    
+    
+  </p>
+
+
+
+<% end %>
