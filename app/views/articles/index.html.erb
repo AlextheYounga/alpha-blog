@@ -1,0 +1,22 @@
+<h1>All Articles</h1>
+
+<p>
+<%= link_to "Create New Article", new_article_path %>
+</p>
+
+<table>
+  <!--<tr> means table row; <th> means table header; <td> means table data -->
+  <tr>  
+    <th>Title</th>
+    <th>Description</th>
+  </tr>
+  
+  <% @articles.each do |article| %>
+  <tr>
+    <td> <%= article.title %> </td>
+    <td> <%= article.description %> </td>
+    <td> <%= link_to 'Edit | ', edit_article_path(article) %> </td>
+    <td> <%= link_to ' View', article_path(article) %>  </td> <!-- Here, we are calling on the |article| hash above -->
+  </tr> 
+  <% end %>
+</table>

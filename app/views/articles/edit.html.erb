@@ -1,11 +1,10 @@
-
-
-<h1>Create an Article</h1>
+<h1>Edit Existing Article</h1>
+<!--Most of this was copied straight from new.html.erb -->
 
 <% if @article.errors.any? %>
 <h2>Error Saving Article</h2>
-<ul>
-  <% @article.errors.full_messages.each do |msg| %>
+<ul> 
+ <% @article.errors.full_messages.each do |msg| %>
       <li><%= msg %></li>
   <% end %>
 </ul>
@@ -14,7 +13,7 @@
 </head>
 
 <%= form_for @article do |f| %>
-<!--the form_for helpers are rails view helpers for generating form markup; read more at guides.rubyonrails.org/form_helpers.html -->
+<!--the form_for helpers are rails view helpers for generating form markup; read more at guides.rubyonrails.org/form_helpers.html. Also automatically connected with the database -->
 <!--The @article instance variable will be initiated in the articles_controller.rb -->
   <p>
     <%= f.label :title %> </br> <!--This </br> places the text box below "title" -->
@@ -23,15 +22,13 @@
   
   <p>
     <%= f.label :description %> </br>
-    <%= f.text_area :description%>
+    <%= f.text_area :description %>
     
     <!--the text_area creates a bigger box than text_field -->
   </p>
-    
+  
   <p>
-    <%= f.submit %> 
+     <%= f.submit %>
   </p>
 
 <% end %>
-
-<%= link_to "Back to Articles Listing", articles_path %>
