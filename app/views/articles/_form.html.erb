@@ -1,0 +1,33 @@
+<% if @article.errors.any? %>
+<h2>Error Saving Article</h2>
+<ul>
+  <% @article.errors.full_messages.each do |msg| %>
+      <li><%= msg %></li>
+  <% end %>
+</ul>
+<% end %>
+
+</head>
+
+<%= form_for @article do |f| %>
+<!--the form_for helpers are rails view helpers for generating form markup; read more at guides.rubyonrails.org/form_helpers.html -->
+<!--The @article instance variable will be initiated in the articles_controller.rb -->
+  <p>
+    <%= f.label :title %> </br> <!--This </br> places the text box below "title" -->
+    <%= f.text_field :title %>
+  </p>
+  
+  <p>
+    <%= f.label :description %> </br>
+    <%= f.text_area :description%>
+    
+    <!--the text_area creates a bigger box than text_field -->
+  </p>
+    
+  <p>
+    <%= f.submit %> 
+  </p>
+
+<% end %>
+
+<%= link_to "Back to Articles Listing", articles_path %>

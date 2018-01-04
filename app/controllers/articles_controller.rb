@@ -5,10 +5,12 @@ def index
   @articles = Article.all
 end
 
+
 # THIS IS THE CONTROLLER FOR THE NEW PAGE
   def new   #it's called "new" because it's a new articles page
     @article = Article.new
   end
+  
  
 #THIS IS THE CONTROLLER FOR THE EDIT PAGE
 def edit
@@ -29,6 +31,7 @@ else
   end
 end
 
+
 #THIS IS THE CONTROLLER FOR THE ARTICLE UPDATE METHOD
 def update  
   @article = Article.find(params[:id])
@@ -40,10 +43,12 @@ def update
   end
 end
 
+
 #THIS IS THE CONTROLLER FOR THE SHOW PAGE 
 def show
     @article = Article.find(params[:id])   #article id is going to be passed through the params hash
 end
+  
   
 #THIS IS THE CONTROLLER FOR THE ARTICLE PARAMETERS FUNCTION
  private
