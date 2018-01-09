@@ -1,4 +1,6 @@
 class ArticlesController < ApplicationController #class name has to be CamelCase
+
+before_action :set_article, only: [:edit, :update, :show, :destroy] 
  
 #THIS IS THE METHOD FOR THE INDEX, OR THE LISTING ARTICLES PAGE  
 def index
@@ -14,7 +16,7 @@ end
  
 #THIS IS THE METHOD FOR THE EDIT PAGE
 def edit
-  @article = Article.find(params[:id])
+  
 end
   
 
@@ -34,7 +36,7 @@ end
 
 #THIS IS THE METHOD FOR THE ARTICLE UPDATE METHOD
 def update  
-  @article = Article.find(params[:id])
+
   if @article.update(article_params)
     flash[:notice] = "Article was successfully updated"
     redirect_to article_path(@article)
@@ -46,21 +48,24 @@ end
 
 #THIS IS THE METHOD FOR THE SHOW PAGE 
 def show
-    @article = Article.find(params[:id])   #article id is going to be passed through the params hash
+
 end
   
 
 #THIS IS THE METHOD FOR THE DESTROY FUNCTION
 def destroy
-  @article = Article.find(params[:id])
   @article.destroy
   flash[:notice] = "Article was successfully deleted"
   redirect_to articles_path
 end
-  
-  
-#THIS IS THE METHOD FOR THE ARTICLE PARAMETERS FUNCTION
+
+
+#THESE ARE METHODS THAT CAN BE USED THROUGHOUT THE CONTROLLER;
  private
+  def set_article # This function used to be called in edit, show, update, and destroy; in efforts to shorten the code, we threw them all in one basket and called them at the top.
+    @article = Article.find(params[:id])  #Find function to find the specific article in the db
+  end
+ 
   def article_params
     params.require(:article).permit(:title, :description)   #The params hash and the permissions will save the article title and description 
   end

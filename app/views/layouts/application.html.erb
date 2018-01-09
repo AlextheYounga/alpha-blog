@@ -12,8 +12,9 @@
 
 </head>
 <body>
-  <%= render 'layouts/messages' %>
-<%= yield %>
+  <%= render 'layouts/navigation' %>
+  <%= render 'layouts/messages' %> <!-- This renders the messages partial all throughout the application --> 
+  <%= yield %>  <!--This code allows this file to wrap all other views in the application -->
 
 
 
