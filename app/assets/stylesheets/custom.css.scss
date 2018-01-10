@@ -1,19 +1,29 @@
-body {
-  padding-top: 3.5rem;
-}
-
 .jumbotron {
   background-image: asset-url('grand_canyon2.jpg');
-  background-size: cover;
-  height: 550px;
+   background-repeat:no-repeat;
+  background-position:center center;
+  -webkit-background-size:cover;
+  -moz-background-size:cover;
+  -o-background-size:cover;
+  background-size:cover;
+  height: 525px;
+  p {
+    width: 650px;
+  }
 }
 
- 
+
+
+
+
 
 //This took a while to figure out; the nth-of-type must follow the .post-teaser
 .post-teaser:nth-of-type(odd) {
   background-color: #e9ecef;
 }
  
+
+       
+
 
 @import "bootstrap";
