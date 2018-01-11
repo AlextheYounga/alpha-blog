@@ -1,3 +1,5 @@
+@import "bootstrap";
+
 .jumbotron {
   background-image: asset-url('grand_canyon2.jpg');
    background-repeat:no-repeat;
@@ -6,14 +8,15 @@
   -moz-background-size:cover;
   -o-background-size:cover;
   background-size:cover;
-  height: 525px;
+  height: 550px;
   p {
     width: 650px;
   }
 }
 
-
-
+.row {
+  padding-left: 2cm;
+}
 
 
 
@@ -26,4 +29,3 @@
        
 
 
-@import "bootstrap";

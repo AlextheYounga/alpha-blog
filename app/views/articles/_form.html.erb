@@ -7,27 +7,38 @@
 </ul>
 <% end %>
 
-</head>
 
-<%= form_for @article do |f| %>
-<!--the form_for helpers are rails view helpers for generating form markup; read more at guides.rubyonrails.org/form_helpers.html -->
-<!--The @article instance variable will be initiated in the articles_controller.rb -->
-  <p>
-    <%= f.label :title %> </br> <!--This </br> places the text box below "title" -->
-    <%= f.text_field :title %>
-  </p>
-  
-  <p>
-    <%= f.label :description %> </br>
-    <%= f.text_area :description%>
+ <!--the form_for helpers are rails view helpers for generating form markup; read more at guides.rubyonrails.org/form_helpers.html -->
+    <!--The @article instance variable will be initiated in the articles_controller.rb -->
+
+<div class='row'>
+  <div class='col-xs-12'>
+    <%= form_for @article do |f| %>
+      <div class='form-group'>
+          <div class='control-label col-sm-2'>
+            <%= f.label :title %>
+          </div>  
+            <div class='form-control form-control-lg'>
+            <%= f.text_field :title, class: "form-control", placeholder: "Title of Article", autofocus: true %>
+            </div>
+            </div>
+          
+
+      
+      <p>
+        <%= f.label :description %> </br>
+        <%= f.text_area :description%>
+        
+        <!--the text_area creates a bigger box than text_field -->
+      </p>
+        
+      <p>
+        <%= f.submit %> 
+      </p>
     
-    <!--the text_area creates a bigger box than text_field -->
-  </p>
+    <% end %>
     
-  <p>
-    <%= f.submit %> 
-  </p>
+    <%= link_to "Back to Articles Listing", articles_path %>
 
-<% end %>
-
-<%= link_to "Back to Articles Listing", articles_path %>
+  </div>
+</div>
