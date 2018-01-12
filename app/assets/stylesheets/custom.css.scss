@@ -1,4 +1,20 @@
-@import "bootstrap";
+$navbar-default-bg: #7f1a1a;
+
+.navbar-default {
+font-weight: bold;
+
+}
+
+#right-menu {
+  color:white;
+}
+
+#logo {
+  color:white;
+  font-size: 1.7em;
+}
+
+
 
 .jumbotron {
   background-image: asset-url('grand_canyon2.jpg');
@@ -14,9 +30,6 @@
   }
 }
 
-.row {
-  padding-left: 2cm;
-}
 
 
 
@@ -26,6 +39,8 @@
 }
  
 
-       
+@import "bootstrap-sprockets";
+@import "bootstrap";
+
 
 
