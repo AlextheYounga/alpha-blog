@@ -1,4 +1,17 @@
-$navbar-default-bg: #7f1a1a;
+$navbar-default-bg: #212529;
+
+
+#display-3 {
+  color: white;
+  text-shadow: 2px 3px #212529; 
+  padding-left: 50px
+}
+
+#HeaderSub {
+  color: white;
+  text-shadow: 2px 2px #212529;
+  padding-left: 50px
+}
 
 .navbar-default {
 font-weight: bold;
@@ -31,13 +44,21 @@ font-weight: bold;
 }
 
 
-
-
 //This took a while to figure out; the nth-of-type must follow the .post-teaser
 .post-teaser:nth-of-type(odd) {
   background-color: #e9ecef;
 }
  
+#CreateNew {
+  font-weight: bold;
+  font-size: 3.5em;
+}
+
+.footer {
+  margin-top: 45px;
+  padding-top: 5px;
+  border-top: 1px solid #212529 ;
+}
 
 @import "bootstrap-sprockets";
 @import "bootstrap";
