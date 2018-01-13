@@ -1,10 +1,20 @@
 <!--This is the page rendered after the creation of an article -->
 
-<h1>Showing Selected Article</h1>
-
-<p> Title: <%= @article.title %> </p>
-
-<p> Description: <%= @article.description %> </p>
-
-<%= link_to "Edit Article", edit_article_path(@article) %> |
-<%= link_to "Back to Articles Listing", articles_path %>
+<h2 align="center">Title: <%= @article.title %> </h2>
+  <div class="well col-xs-8 col-xs-offset-2">
+    <h4 align="center" class="description"><strong>Description</strong></h4>
+    <hr>
+  
+    <%= simple_format(@article.description) %>
+    <div class="article-actions">
+      <%= link_to "Edit this Article", edit_article_path(@article), class: "btn btn-xs btn-primary" %>
+      <%= link_to "Delete this Article", article_path(@article), method: :delete,
+      
+                                        data: {confirm: "Are you sure you want to delete the article?"},
+                                        class: "btn btn-xs btn-danger" %>
+                                        
+      <%= link_to "View all Articles", articles_path, class: "btn btn-xs btn-success"%>
+    </div>  
+</div>
+  
+  

@@ -2,8 +2,8 @@ $navbar-default-bg: #212529;
 
 
 #display-3 {
-  color: white;
-  text-shadow: 2px 3px #212529; 
+  color: #212529;
+  text-shadow: 2px 2px white; 
   padding-left: 50px
 }
 
@@ -19,7 +19,9 @@ font-weight: bold;
 }
 
 #right-menu {
-  color:white;
+  a {
+    color: white;
+  }
 }
 
 #logo {
@@ -30,6 +32,7 @@ font-weight: bold;
 
 
 .jumbotron {
+  margin-top: 0;
   background-image: asset-url('grand_canyon2.jpg');
    background-repeat:no-repeat;
   background-position:center center;
@@ -53,6 +56,16 @@ font-weight: bold;
   font-weight: bold;
   font-size: 3.5em;
 }
+
+.article-actions {
+  border-top: 1px solid #212529;
+  padding-top: 5px;
+}
+
+.description {
+  margin-top: 0;
+}
+
 
 .footer {
   margin-top: 45px;
