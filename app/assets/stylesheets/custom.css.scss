@@ -1,5 +1,24 @@
-$navbar-default-bg: #212529;
+//ALL NAVBAR STUFF BELOW
 
+$navbar-default-bg: #212529;
+$navbar-margin-bottom: -20px; 
+//The above code is going directly into the hidden bootstrap files that you don't have access to. 
+
+.navbar-default {
+font-weight: bold;}
+
+#right-menu {
+  a {
+    color: white;
+  }
+}
+
+#logo {
+  color:white;
+  font-size: 1.7em;
+}
+
+//ALL JUMBOTRON STUFF BELOW
 
 #display-3 {
   color: #212529;
@@ -13,27 +32,10 @@ $navbar-default-bg: #212529;
   padding-left: 50px
 }
 
-.navbar-default {
-font-weight: bold;
-
-}
-
-#right-menu {
-  a {
-    color: white;
-  }
-}
-
-#logo {
-  color:white;
-  font-size: 1.7em;
-}
-
-
 
 .jumbotron {
-  margin-top: 0;
-  background-image: asset-url('grand_canyon2.jpg');
+  
+  background-image: asset-url('thumbsup.jpg');
    background-repeat:no-repeat;
   background-position:center center;
   -webkit-background-size:cover;
@@ -46,11 +48,13 @@ font-weight: bold;
   }
 }
 
-
+//HOME PAGE BLOG TEASERS
 //This took a while to figure out; the nth-of-type must follow the .post-teaser
 .post-teaser:nth-of-type(odd) {
   background-color: #e9ecef;
 }
+ 
+//NEW ARTICLE PAGE
  
 #CreateNew {
   font-weight: bold;
@@ -66,12 +70,33 @@ font-weight: bold;
   margin-top: 0;
 }
 
+//READING LIST CSS 
+
+#media {
+  padding-left: 2cm;
+  padding-top: 30px;
+  
+img {
+    border: 1px solid #ddd; /* Gray border */
+    border-radius: 4px;  /* Rounded border */
+    padding: 5px; /* Some padding */
+    width: 100px; /* Set a small width */
+}
+}
+
+.media-body {
+  padding-right: 150px;
+}
+
+//FOOTER
 
 .footer {
   margin-top: 45px;
   padding-top: 5px;
   border-top: 1px solid #212529 ;
 }
+
+//BOOTSTRAP CONTENT - DON'T BOTHER
 
 @import "bootstrap-sprockets";
 @import "bootstrap";

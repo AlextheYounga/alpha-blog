@@ -1,16 +1,13 @@
-<h1 align="center">All Articles</h1>
 
-<%= link_to "Create New Article", new_article_path %>
+<h1 align="center">All Articles</h1>
 
 <!-- Because there's |article| as the key, we have to refer to each article as (article) not (@article)-->
 
-
-  
 <% @articles.each do |article| %>
-  <div align= class="row">
-    <div class="col-xs-8 col-xs-offsete-2">
-      <div class ="well well-lg">
-        <div class="article-title">
+  <div class="row">
+    <div class="col-xs-8 col-xs-offset-2">
+      <div class= "well well-lg">
+        <div class= "article-title">
           <%= link_to article.title, article_path(article) %>
         </div>
         
@@ -32,5 +29,6 @@
       </div>
     </div>
   </div>
+</div>
   
 <% end %>

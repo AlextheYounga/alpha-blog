@@ -5,5 +5,10 @@ class PagesController < ApplicationController
 
   def about
   end
+
+  def readinglist
+  end
+
 end 
 
+  
