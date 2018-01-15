@@ -80,12 +80,29 @@ img {
     border: 1px solid #ddd; /* Gray border */
     border-radius: 4px;  /* Rounded border */
     padding: 5px; /* Some padding */
-    width: 100px; /* Set a small width */
+    width: 150px; /* Set a small width */
 }
 }
 
 .media-body {
   padding-right: 150px;
+}
+
+#bottom-row {
+  margin-left: 2cm;
+  img {
+    border: 1px solid #ddd; /* Gray border */
+    border-radius: 4px;  /* Rounded border */
+    padding: 5px; /* Some padding */
+    width: 150px;
+  }
+   .caption {
+    vertical-align: top;
+    display: inline-block;
+    text-align: center;
+    width: 150px;
+  }
+  
 }
 
 //FOOTER

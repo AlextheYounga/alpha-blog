@@ -8,16 +8,16 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" id="logo" href="#">alextheyounger.com</a>
+        <%= link_to "alextheyounger.com", root_path, class: "navbar-brand", id: "logo" %>
     </div>
 
  
       
       <ul class="nav navbar-nav navbar-right" id="right-menu">
-        <li><a href="#">About</a></li>
-        <li><a href="#">Blog</a></li>
-        <li><a href="#">Reading List</a></li>
-        <li><a href="#">Today I Learned</a></li>
+        <li><%= link_to "About", about_path %></li>
+        <li><a href="https://medium.com/@AlextheYounger">Blog</a></li>
+        <li><%= link_to "Reading List", readinglist_path %></li>
+        <li><%= link_to "Today I Learned", articles_path  %></li>
         
       </ul>
     </div><!-- /.navbar-collapse -->
