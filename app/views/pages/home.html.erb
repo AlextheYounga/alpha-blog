@@ -11,13 +11,12 @@
     <main role="main">
       <!-- Main jumbotron for a primary marketing message or call to action -->
       <div class="jumbotron">
-        <div class="container">
-          <h1 class="display-3" id="display-3">Alex Younger</h1>
-          <p id="HeaderSub">I build websites and applications, I write lots of interesting things, and my driving passion is to learn everything there is to know in the universe until my head explodes like Marvin from Pulp Fiction </p>
-        
+         <div class="container">
+            <h1 class="display-3" id="display-3">Alex Younger</h1>
+            <p id="HeaderSub">I build websites and applications, I write lots of interesting things, and my driving passion is to 
+                             learn everything there is to know in the universe </p>
+          </div> 
         </div>
-      </div>
-  
   
    
    
@@ -26,7 +25,7 @@
   <div class="container-fluid">
     <div class="list">
       <div class="post-teaser">
-       <h1><%= link_to article.title, article_path(article) %></h1>
+       <h1 id="post-title"><%= link_to article.title, article_path(article) %></h1>
         <p><%= truncate(article.description, length: 100) %></p>
      </div>
     </div>

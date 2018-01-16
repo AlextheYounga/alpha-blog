@@ -18,27 +18,34 @@ font-weight: bold;}
   font-size: 1.7em;
 }
 
-//ALL JUMBOTRON STUFF BELOW
+////////////////////////////////////////HOME PAGE//////////////////////////////
+
+#headshot {
+  width: 250px;
+.container {
+  background-color: #121212;
+}
+}
+
+
+///////////////TITLE/////////////////
+
+
 
 #display-3 {
   position: relative;
   color: #212529;
-  text-shadow: 2px 2px white; 
   padding-left: 50px;
   
 }
-
 #HeaderSub {
   position: relative;
   color: #212529;
-  text-shadow: 1px 1px white; 
   padding-left: 50px;
   font-size: 1.7em;
   font-weight: bold;
   
-}
-
-
+} 
 
 .jumbotron {
   background-image: asset-url('thumbsup.jpg');
@@ -52,18 +59,16 @@ font-weight: bold;}
   .container {
     position: relative;
     width: 700px; 
-    margin-left: 250px;
-  
+    margin-left: 100px;
   }
-  
 }
 
-//HOME PAGE
-.container-fluid {
-  h1 {
+//////////////////HOME POSTS///////////////////////
+
+#post-title {  
     font-size: 3em;
   }
-}
+
 
 
 //This took a while to figure out; the nth-of-type must follow the .post-teaser
@@ -73,7 +78,22 @@ font-weight: bold;}
 }
 */
 
-//PAGE HEADERS
+
+//////////////////////////ABOUT PAGE////////////////////////////
+
+#about-jumbo {
+  background-image: asset-url('grand_canyon2.jpg');
+   background-repeat:no-repeat;
+  background-position:center center;
+  -webkit-background-size:cover;
+  -moz-background-size:cover;
+  -o-background-size:cover;
+  background-size:cover;
+  height: 575px;
+}
+
+
+///////////////////PAGE HEADERS///////////////////////////
  
 #PageHeader {
   font-weight: bold;
@@ -81,7 +101,7 @@ font-weight: bold;}
 }
 
 
-//NEW ARTICLE PAGE
+////////////////////NEW ARTICLE PAGE///////////////////
 .article-actions {
   border-top: 1px solid #212529;
   padding-top: 5px;
@@ -91,7 +111,7 @@ font-weight: bold;}
   margin-top: 0;
 }
 
-//READING LIST CSS 
+//////////////////READING LIST CSS //////////////////////
 
 #media {
   padding-left: 2cm;
@@ -131,7 +151,7 @@ img {
   margin-bottom: 2cm;
 }
 
-//FOOTER
+///////////////////FOOTER////////////////////////
 
 .footer {
   margin-top: 45px;
@@ -139,7 +159,7 @@ img {
   border-top: 1px solid #212529 ;
 }
 
-//BOOTSTRAP CONTENT - DON'T BOTHER
+/////////////////BOOTSTRAP CONTENT - DON'T BOTHER////////////////////////
 
 @import "bootstrap-sprockets";
 @import "bootstrap";
