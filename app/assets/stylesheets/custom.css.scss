@@ -21,20 +21,26 @@ font-weight: bold;}
 //ALL JUMBOTRON STUFF BELOW
 
 #display-3 {
+  position: relative;
   color: #212529;
   text-shadow: 2px 2px white; 
-  padding-left: 50px
+  padding-left: 50px;
+  
 }
 
 #HeaderSub {
-  color: white;
-  text-shadow: 2px 2px #212529;
-  padding-left: 50px
+  position: relative;
+  color: #212529;
+  text-shadow: 1px 1px white; 
+  padding-left: 50px;
+  font-size: 1.7em;
+  font-weight: bold;
+  
 }
 
 
+
 .jumbotron {
-  
   background-image: asset-url('thumbsup.jpg');
    background-repeat:no-repeat;
   background-position:center center;
@@ -42,25 +48,40 @@ font-weight: bold;}
   -moz-background-size:cover;
   -o-background-size:cover;
   background-size:cover;
-  height: 550px;
-  p {
-    width: 650px;
+  height: 575px;
+  .container {
+    position: relative;
+    width: 700px; 
+    margin-left: 250px;
+  
+  }
+  
+}
+
+//HOME PAGE
+.container-fluid {
+  h1 {
+    font-size: 3em;
   }
 }
 
-//HOME PAGE BLOG TEASERS
+
 //This took a while to figure out; the nth-of-type must follow the .post-teaser
+/* Doesn't seem to work with embedded ruby
 .post-teaser:nth-of-type(odd) {
   background-color: #e9ecef;
 }
+*/
+
+//PAGE HEADERS
  
-//NEW ARTICLE PAGE
- 
-#CreateNew {
+#PageHeader {
   font-weight: bold;
   font-size: 3.5em;
 }
 
+
+//NEW ARTICLE PAGE
 .article-actions {
   border-top: 1px solid #212529;
   padding-top: 5px;
@@ -90,6 +111,7 @@ img {
 
 #bottom-row {
   margin-left: 2cm;
+  
   img {
     border: 1px solid #ddd; /* Gray border */
     border-radius: 4px;  /* Rounded border */
@@ -102,7 +124,11 @@ img {
     text-align: center;
     width: 150px;
   }
-  
+}
+
+#RLSub {
+  margin-top: 4cm;
+  margin-bottom: 2cm;
 }
 
 //FOOTER

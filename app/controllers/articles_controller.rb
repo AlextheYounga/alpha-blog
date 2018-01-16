@@ -51,10 +51,6 @@ def show
 
 end
 
-def posts
-  @articles = Article.order("created_at desc").limit(5)
-end
-  
 
 #THIS IS THE METHOD FOR THE DESTROY FUNCTION
 def destroy
