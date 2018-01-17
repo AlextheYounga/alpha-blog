@@ -6,7 +6,7 @@ root 'pages#home'  #This is the route for the homepage; using root makes the ser
 get 'about', to: 'pages#about' #This is the about page
 get 'readinglist', to: 'pages#readinglist'
 
-resources :articles #this simple term resources allowed a:
+resources :articles, except: [:signup] #this simple term resources allowed a:
 #new-article path
 #a post to create articles
 #an edit article path 
@@ -15,9 +15,8 @@ resources :articles #this simple term resources allowed a:
 #a delete article path
 #and index article path
 
-
-
-
+get 'signup', to: 'users#signup'
+resources :users, except: [:signup] #creates all routes except signup route
 
 
 
