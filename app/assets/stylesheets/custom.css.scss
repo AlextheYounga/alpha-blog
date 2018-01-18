@@ -101,16 +101,6 @@ font-weight: bold;}
 }
 
 
-////////////////////NEW ARTICLE PAGE///////////////////
-.article-actions {
-  border-top: 1px solid #212529;
-  padding-top: 5px;
-}
-
-.description {
-  margin-top: 0;
-}
-
 //////////////////READING LIST CSS //////////////////////
 
 #media {
@@ -152,9 +142,19 @@ img {
 }
 
 ///////////////////////ARTICLES///////////////////////
+
 .article-meta-details {
   border-top: 1px solid #eaeaea;
   margin-top: 15px;
+}
+
+.article-actions {
+  border-top: 1px solid #eaeaea;
+  padding-top: 5px;
+}
+
+.description {
+  margin-top: 0;
 }
 
 

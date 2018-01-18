@@ -1,11 +1,4 @@
-<% if @user.errors.any? %>
-<h2>Error</h2>
-<ul>
-  <% @user.errors.full_messages.each do |msg| %>
-      <li><%= msg %></li>
-  <% end %>
-</ul>
-<% end %>
+<%= render 'shared/errors', obj: @user %>
 
 
  <!--the form_for helpers are rails view helpers for generating form markup; read more at guides.rubyonrails.org/form_helpers.html -->
