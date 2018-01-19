@@ -5,17 +5,18 @@ class ApplicationController < ActionController::Base
   
 # helper_method :current_user, :logged_in?
  
- # def current_user
-  #  @current_user ||= User.find(session[:user_id]) if session[:user_id]
+# def current_user
+ #  @current_user ||= User.find(session[:user_id]) if session[:user_id]
     #the ||= prevents the session from bombing the database with repetitive hits
     
-  #end
+# end
   
   
-  #def logged_in?
-   # !!current_user
-    # !! is the sign for boolian, meaning true or false
-  #end
+#  def logged_in?
+#    !!current_user
+  #   !! is the sign for boolean, meaning true or false
+#  end
   
+ 
 
 end
