@@ -18,6 +18,11 @@ resources :articles, except: [:signup] #this simple term resources allowed a:
 get 'signup', to: 'users#signup'
 resources :users, except: [:signup] #creates all routes except signup route
 
+get 'login', to: 'sessions#login'
+post 'login', to: 'sessions#create'
+delete 'logout', to: 'sessions#destroy'
+
+
 
 
 

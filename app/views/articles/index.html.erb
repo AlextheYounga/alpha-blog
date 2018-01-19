@@ -1,3 +1,7 @@
+  <%#= before_filter if :current_user %>
+    <!--<div id="article-actions"></div> -->
+  <%# end %>
+
 </br>
 <h1 id="PageHeader" align="center">All Articles</h1>
 
@@ -18,7 +22,7 @@
                               <%= time_ago_in_words(article.created_at) %> ago, 
                               Last updated: <%= time_ago_in_words(article.updated_at) %> ago </small>
           </div>                    
-           <div class="article-actions">
+           <div id="article actions" class="article-actions">
             <%= link_to "Edit this Article", edit_article_path(article), class: "btn btn-xs btn-primary" %>
             <%= link_to "Delete this Article", article_path(article), method: :delete,
       
@@ -34,5 +38,5 @@
     </div>
   </div>
 </div>
-  
+
 <% end %>
