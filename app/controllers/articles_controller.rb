@@ -1,6 +1,7 @@
 class ArticlesController < ApplicationController #class name has to be CamelCase
 
 before_action :set_article, only: [:edit, :update, :show, :destroy] 
+before_action :restrict, only: [:edit, :update, :new]
  
 #THIS IS THE METHOD FOR THE INDEX, OR THE LISTING ARTICLES PAGE  
 def index
@@ -23,7 +24,7 @@ end
 #THIS IS THE METHOD FOR THE ARTICLE CREATION METHOD  
 def create #this is for the process of sending an article to the database
   @article = Article.new(article_params) #This is the instance variable that will allow your article to be saved from the create method
-  @article = User.last
+  @article.user = User.last
   #@article.save
   if @article.save
   flash[:notice] = "Article was successfully created"
@@ -67,6 +68,12 @@ end
  
   def article_params
     params.require(:article).permit(:title, :description)   #The params hash and the permissions will save the article title and description 
+  end
+  
+  def restrict 
+    if not logged_in?
+      redirect_to root_path
+    end
   end
   
 end

@@ -2,5 +2,5 @@
 class Article < ActiveRecord::Base #this is a subclass from ActiveRecord
   belongs_to :user
   validates :title, presence: true, length: {minimum: 3, maximum: 100}    #this prevents an article from being submitted without a title; this helps maintain data integrity, also must be specific lengths
-  validates :user_id, presence: true                                                     
+  validates :user_id, presence: true
 end
