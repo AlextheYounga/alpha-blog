@@ -2,8 +2,6 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="author" content="">
   </head>
   
   
@@ -13,8 +11,7 @@
       <div class="jumbotron">
          <div class="container">
             <h1 class="display-3" id="display-3">Alex Younger</h1>
-            <p id="HeaderSub">I build websites and applications, I write lots of interesting things, and my driving passion is to 
-                             learn everything there is to know in the universe </p>
+            <p id="HeaderSub">I build websites/applications and write articles that make you think. It is what it is, and it's pretty good. </p>
           </div> 
         </div>
   
@@ -22,57 +19,34 @@
    
   <%= if @articles.any? 
      then @articles.each do |article|%>
-  <div class="container-fluid">
-    <div class="list">
-      <div class="post-teaser">
-       <h1 id="post-title"><%= link_to article.title, article_path(article) %></h1>
-        <p><%= truncate(article.description, length: 100) %></p>
-     </div>
+  
+    <div class="row">
+      <div class="col-xs-8 col-xs-offset-2">
+        <div class= "well well-lg">
+          <div class= "article-title" id="post-title">
+            <%= link_to article.title, article_path(article) %>
+          </div>
+        
+          <div class="article-body">
+            <%= truncate(article.description, length: 100) %>
+            <div class= "article-meta-details">
+              <small>Created<%#= article.user.username if article.user %>
+                                <%= time_ago_in_words(article.created_at) %> ago, 
+                                Last updated: <%= time_ago_in_words(article.updated_at) %> ago </small>
+            </div>
+        </div>
+      </div>
     </div>
   </div>
+</div>
 
 
 
-
-<!-- ALTERNATIVE MANUAL HTML 
-
-      <div class="container-fluid">
-        <div class="list">
-          <div class="post-teaser">
-            <h1>Blog</h1>
-            <p>Description</p>
-            <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
-          </div>
-          
-          <div class="post-teaser">
-            <h2>Blog 2</h2>
-            <p>Blog Description 2</p>
-          <a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
-          </div>
-          
-          <div class="post-teaser">
-            <h2>Blog 3</h2>
-            <p>Blog Description 3</p>
-            <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
-          </div>
-          
-          <div class="post-teaser">
-            <h2>Blog 4</h2>
-            <p>Blog Description 4</p>
-            <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
-          </div>
-          
-          <div class="post-teaser">
-            <h2>Blog 5</h2>
-            <p>Blog Description 5</p>
-            <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
-          </div>
-        </div> -->
+        
+        
 
         <hr>
 
-      </div> <!-- /container -->
-        
     </main>
     
   </body>
