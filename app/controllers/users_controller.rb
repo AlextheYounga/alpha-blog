@@ -14,6 +14,9 @@ class UsersController < ApplicationController
       render 'signup'
       end
     end  
+    
+    
+    
 
   private
   def user_params

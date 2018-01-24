@@ -22,22 +22,20 @@ end
 
 #THIS IS THE METHOD FOR THE ARTICLE CREATION METHOD  
 def create #this is for the process of sending an article to the database
-   
-    @article =Article.new(article_params) #This is the instance variable that will allow your article to be saved from the create method
-    #@article.user = User.first
-    @article.save
- # if @article.save
-    flash[:notice] = "Article was successfully created"
-     redirect_to article_path(@article)   #After creation, this will redirect the view to the last created article
-#else
-   # render 'new'
-  #end
+  @article = Article.new(article_params) #This is the instance variable that will allow your article to be saved from the create method
+  @article = User.last
+  #@article.save
+  if @article.save
+  flash[:notice] = "Article was successfully created"
+  redirect_to article_path(@article)   #After creation, this will redirect the view to the last created article
+  else
+    render 'new'
+  end
 end
 
 
 #THIS IS THE METHOD FOR THE ARTICLE UPDATE METHOD
 def update  
-
   if @article.update(article_params)
     flash[:notice] = "Article was successfully updated"
     redirect_to article_path(@article)
