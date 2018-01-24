@@ -1,9 +1,9 @@
 class UsersController < ApplicationController
   
   def signup
-    if not logged_in?
-      redirect_to root_path
-    end
+   # if not logged_in?
+    #  redirect_to root_path
+    #end
     @user = User.new
   end
 
