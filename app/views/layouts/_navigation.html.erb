@@ -12,17 +12,18 @@
     </div>
 
  
-      
-      <ul class="nav navbar-nav navbar-right" id="right-menu">
-        <li><%= link_to "About", about_path %></li>
-        <li><a href="https://medium.com/@AlextheYounger">Medium Blog</a></li>
-        <li><%= link_to "Reading List", readinglist_path %></li>
-        <li><%= link_to "Today I Learned", articles_path  %></li>
-        <% if logged_in? %>
-          <li><%= link_to "Log Out", logout_path, method: :delete  %></li>
-        <% else %>
-          <%= nil %>
-        <% end %>
+      <div class="right-menu-container">
+        <ul class="nav navbar-nav navbar-right" id="right-menu">
+          <li><%= link_to "About", about_path %></li>
+          <li><a href="https://medium.com/@AlextheYounger">Medium Blog</a></li>
+          <li><%= link_to "Reading List", readinglist_path %></li>
+          <li><%= link_to "Today I Learned", articles_path  %></li>
+          <% if logged_in? %>
+            <li><%= link_to "Log Out", logout_path, method: :delete  %></li>
+          <% else %>
+            <%= nil %>
+          <% end %>
+        </div>
        <!-- <li><#%= link_to "Log Out", logout_path, method: :delete  %></li> -->
         
       </ul>
