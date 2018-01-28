@@ -101,54 +101,14 @@ font-weight: bold;}
 ///////////////////PAGE HEADERS///////////////////////////
  
 #PageHeader {
+  margin-top: 1cm;
   font-weight: bold;
   font-size: 3.5em;
 }
 
 
-//////////////////READING LIST CSS //////////////////////
 
-/*
-#media {
-  padding-left: 2cm;
-  padding-top: 30px;
-  
-img {
-    border: 1px solid #ddd; /* Gray border */
-  //border-radius: 4px;  /* Rounded border */
-  //padding: 5px; /* Some padding */
-  //width: 150px; /* Set a small width */
-//}
-//}
 
-/*
-.media-body {
-  padding-right: 150px;
-}
-
-#bottom-row {
-  margin-left: 2cm;
-  
-  img {
-    border: 1px solid #ddd; /* Gray border */
-  //border-radius: 4px;  /* Rounded border */
-  //padding: 5px; /* Some padding */
-  //width: 150px;
- // }
-  /*
-   .caption {
-    vertical-align: top;
-    display: inline-block;
-    text-align: center;
-    width: 150px;
-  }
-}
-
-#RLSub {
-  margin-top: 4cm;
-  margin-bottom: 2cm;
-}
-*/
 
 ///////////////////////ARTICLES///////////////////////
 
@@ -182,19 +142,22 @@ img {
 }
 
 
-
+//////////////////READING LIST CSS //////////////////////
 /////////////////ISOTOPE/////////////////////////////
 
 $mainColor: #212529;
 
 
 .toggles{ 
-  width: 800px;
-  margin: auto;
+
+  max-width: 800px;
+  width: auto;
+  margin: 0 auto;
   display: block;
-  
   clear: both;
   overflow: hidden;
+  vertical-align: h1;
+  
 }
 
 button{
@@ -214,7 +177,7 @@ button{
 .covers{
     float: auto;
     margin: 40px;
-    margin-left: 1.7cm;
+    margin-left: 2cm;
     display: flex;
     flex-wrap: wrap;
     
