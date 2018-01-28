@@ -108,18 +108,20 @@ font-weight: bold;}
 
 //////////////////READING LIST CSS //////////////////////
 
+/*
 #media {
   padding-left: 2cm;
   padding-top: 30px;
   
 img {
     border: 1px solid #ddd; /* Gray border */
-    border-radius: 4px;  /* Rounded border */
-    padding: 5px; /* Some padding */
-    width: 150px; /* Set a small width */
-}
-}
+  //border-radius: 4px;  /* Rounded border */
+  //padding: 5px; /* Some padding */
+  //width: 150px; /* Set a small width */
+//}
+//}
 
+/*
 .media-body {
   padding-right: 150px;
 }
@@ -129,10 +131,11 @@ img {
   
   img {
     border: 1px solid #ddd; /* Gray border */
-    border-radius: 4px;  /* Rounded border */
-    padding: 5px; /* Some padding */
-    width: 150px;
-  }
+  //border-radius: 4px;  /* Rounded border */
+  //padding: 5px; /* Some padding */
+  //width: 150px;
+ // }
+  /*
    .caption {
     vertical-align: top;
     display: inline-block;
@@ -145,6 +148,7 @@ img {
   margin-top: 4cm;
   margin-bottom: 2cm;
 }
+*/
 
 ///////////////////////ARTICLES///////////////////////
 
@@ -175,6 +179,62 @@ img {
   padding-top: 5px;
   border-top: 1px solid #212529;
   clear: both;
+}
+
+
+
+/////////////////ISOTOPE/////////////////////////////
+
+$mainColor: #212529;
+
+
+.toggles{ 
+  width: 800px;
+  margin: auto;
+  display: block;
+  
+  clear: both;
+  overflow: hidden;
+}
+
+button{
+  border: 2px solid $mainColor;
+  border-radius: 40px; 
+  color: $mainColor;
+  display: block;
+  float: left;
+  margin: auto;
+  padding: 10px;
+  width: 150px;
+  cursor: pointer;
+  font-size: 14px; 
+  margin: 0 5px;
+}
+
+.covers{
+    float: auto;
+    margin: 40px;
+    margin-left: 1.7cm;
+    display: flex;
+    flex-wrap: wrap;
+    
+  div {
+    padding-left: 10px;
+    padding-bottom: 10px;
+  }
+  
+  img {
+    border: 1px solid #ddd; /* Gray border */
+    border-radius: 4px;  /* Rounded border */
+    padding: 5px; /* Some padding */
+    width: 200px;
+  
+  }
+  
+  #audio{
+    width: 225px;
+  }
+   
 }
 
 /////////////////BOOTSTRAP CONTENT - DON'T BOTHER////////////////////////
