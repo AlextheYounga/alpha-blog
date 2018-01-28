@@ -183,8 +183,6 @@ img {
 $mainColor: #212529;
 
 
-
-
 .toggles{ 
   width: 800px;
   margin: auto;
@@ -209,45 +207,29 @@ button{
 }
 
 .covers{
-  
-  
-  
+    float: auto;
+    margin: 40px;
+    margin-left: 1.7cm;
+    display: flex;
+    flex-wrap: wrap;
+    
+  div {
+    padding-left: 10px;
+    padding-bottom: 10px;
+  }
   
   img {
     border: 1px solid #ddd; /* Gray border */
     border-radius: 4px;  /* Rounded border */
     padding: 5px; /* Some padding */
     width: 200px;
-    float: left;
-    margin: 10px;
-    display: block;
-    
-    
-    
-    
+  
   }
   
   #audio{
     width: 225px;
   }
-   /*.caption {
-    vertical-align: top;
-    display: inline-block;
-    text-align: center;
-   }
    
-  div{
-    font: 16px/250px Arial; 
-    width: 245px; 
-    height: 250px;
-    float: left;
-    margin: 10px; 
-    display: block;
-    text-align: center;
-    background: $mainColor;
-    color: #fff; 
-  }
-   */
 }
 
 /////////////////BOOTSTRAP CONTENT - DON'T BOTHER////////////////////////
