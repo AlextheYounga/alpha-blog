@@ -19,8 +19,7 @@ font-weight: bold;}
 
 #logo {
   color:white;
-  font-size: 1.7em;
-  padding-left: 165px;
+  font-size: 2.3vmin
 }
 
 ////////////////////////////////////////HOME PAGE//////////////////////////////
@@ -38,23 +37,25 @@ font-weight: bold;}
 
 
 #display-3 {
-  position: relative;
+  font-weight: bold;
+  font-size: 3.2vmax;
   color: #212529;
-  padding-left: 50px;
+  padding-left: 15px;
+  
   
 }
 #HeaderSub {
-  position: relative;
+  
+  
   color: #212529;
-  padding-left: 50px;
-  font-size: 1.7em;
+  font-size: 2.3vh;
   font-weight: bold;
   
 } 
 
 .jumbotron {
   background-image: asset-url('thumbsup.jpg');
-   background-repeat:no-repeat;
+  background-repeat:no-repeat;
   background-position:center center;
   -webkit-background-size:cover;
   -moz-background-size:cover;
@@ -62,17 +63,15 @@ font-weight: bold;}
   background-size:cover;
   height: 575px;
   .container {
-    position: relative;
-    width: 700px; 
-    margin-left: 100px;
+    
+    width: auto; 
+    max-width: 420px;
+    
+    
   }
 }
 
 //////////////////HOME POSTS///////////////////////
-
-#post-title {  
-    font-size: 2em;
-  }
 
 
 
@@ -96,6 +95,7 @@ font-weight: bold;}
   background-size:cover;
   height: 575px;
 }
+
 
 
 ///////////////////PAGE HEADERS///////////////////////////
@@ -130,7 +130,13 @@ font-weight: bold;}
   margin-top: 0;
 }
 
+#title {
+  margin-top: 1cm;  //show page
+}
 
+#post-title {  
+    font-size: 2.2vmax;
+  }
 
 ///////////////////FOOTER////////////////////////
 
