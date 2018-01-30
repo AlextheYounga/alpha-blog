@@ -168,11 +168,11 @@ $mainColor: #212529;
 
   max-width: 800px;
   width: auto;
-  margin-left: 28%;
+  margin: auto;
   display: block;
   clear: both;
   overflow: hidden;
-  vertical-align: h1;
+  
   
 }
 
@@ -188,12 +188,14 @@ button{
   cursor: pointer;
   font-size: 14px; 
   margin: 0 5px;
+  
+ 
 }
 
 .covers{
     float: auto;
     margin: 5%;
-    margin-left: 8%;
+    margin-left: 100px;
     display: flex;
     flex-wrap: wrap;
     
@@ -207,6 +209,7 @@ button{
     border-radius: 4px;  /* Rounded border */
     padding: 5px; /* Some padding */
     width: 200px;
+    
   
   }
   
