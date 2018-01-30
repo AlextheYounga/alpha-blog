@@ -19,7 +19,7 @@ font-weight: bold;}
 
 #logo {
   color:white;
-  font-size: 2.3vmin
+  
 }
 
 ////////////////////////////////////////HOME PAGE//////////////////////////////
@@ -38,7 +38,7 @@ font-weight: bold;}
 
 #display-3 {
   font-weight: bold;
-  font-size: 3.2vmax;
+  font-size: 3.5em;
   color: #212529;
   padding-left: 15px;
   
@@ -50,9 +50,9 @@ font-weight: bold;}
 #HeaderSub {
   max-height: 80px;
   width: auto; 
-  max-width: 700px;
+  max-width: 750px;
   color: #212529;
-  font-size: 2.3vh;
+  font-size: 2.1;
   font-weight: bold;
 
   
@@ -74,7 +74,7 @@ font-weight: bold;}
   
   .container-fluid {
    //Holds the display-3 and HeaderSub
-    margin-top: -15px;
+    margin-top: -10px;
   }
 }
 
