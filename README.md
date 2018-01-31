@@ -1,4 +1,4 @@
-Hi, this is Alex's Blog, built with Ruby on Rails
+This is my personal website that I built using Ruby on Rails. I post Ruby developer tips in the Today I Learned section. 
 
 # Ruby Rails MVC Overview; (Because Not All of Us Are Experts)
 
@@ -24,4 +24,12 @@ Rails is built on the <b>MVC</b> system, depicted in the image above. The <b>rou
 ![screenshot 100](https://user-images.githubusercontent.com/20220366/35651978-4bfd7068-06a7-11e8-870d-88b8c76be0b5.png)
 
 
+## Routes 
 
+![screenshot 101](https://user-images.githubusercontent.com/20220366/35652314-a7073b64-06a8-11e8-8d27-84a1cc93606d.png)
+
+<b>Note here:</b> the signup route is only available to those who are logged in, and I am the only person allowed to log in. I designed a front-end login page simply so I would know how to do it. 
+
+## Reading List Isotope Alternative
+
+The [Metafizzy Isotope](https://isotope.metafizzy.co/) library is a layout library of code that allows you to seperate objects into categories, and then filter them with a click. It's really cool, but it's also a great deal of code, and making it compatible with [Bootstrap](https://getbootstrap.com/) is a pain. I was lucky enough to find some simple [code](https://codepen.io/larrygeams/pen/JaDKf?editors=0010) on Codepen written by [Larry Geams Parangan](https://codepen.io/larrygeams/). Shoutout to him for this creation; it does almost the same thing with FAR less code.
