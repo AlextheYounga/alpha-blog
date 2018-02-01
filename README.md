@@ -36,3 +36,6 @@ The [Metafizzy Isotope](https://isotope.metafizzy.co/) library is a layout libra
 
 ![ezgif com-video-to-gif](https://user-images.githubusercontent.com/20220366/35706776-ae379572-076c-11e8-9fb2-917f54471af2.gif)
 
+
+
+*How did I insert these images and gifs into my ReadMe? Check out this video: https://www.youtube.com/watch?v=nvPOUdz5PL4*
