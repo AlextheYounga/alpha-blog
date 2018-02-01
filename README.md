@@ -33,3 +33,6 @@ Rails is built on the <b>MVC</b> system, depicted in the image above. The <b>rou
 ## Reading List Isotope Alternative
 
 The [Metafizzy Isotope](https://isotope.metafizzy.co/) library is a layout library of code that allows you to seperate objects into categories, and then filter them with a click. It's really cool, but it's also a great deal of code, and making it compatible with [Bootstrap](https://getbootstrap.com/) is a pain. I was lucky enough to find some simple [code](https://codepen.io/larrygeams/pen/JaDKf?editors=0010) on Codepen written by [Larry Geams Parangan](https://codepen.io/larrygeams/). Shoutout to him for this creation; it does almost the same thing with FAR less code.
+
+![ezgif com-video-to-gif](https://user-images.githubusercontent.com/20220366/35706776-ae379572-076c-11e8-9fb2-917f54471af2.gif)
+
