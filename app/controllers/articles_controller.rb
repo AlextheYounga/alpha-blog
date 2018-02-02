@@ -5,7 +5,8 @@ before_action :restrict, only: [:edit, :update, :new]
  
 #THIS IS THE METHOD FOR THE INDEX, OR THE LISTING ARTICLES PAGE  
 def index
-  @articles = Article.all
+  #@articles = Article.all
+  @articles = Article.order("created_at desc") 
 end
 
 

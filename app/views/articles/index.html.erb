@@ -6,9 +6,9 @@
 </br>
 <h1 id="PageHeader" align="center">All Articles</h1>
 
-<div id="CreateNew"> 
+<div align="center" id="CreateNew"> 
 <% if logged_in? %>
-<%= link_to "Create New Article", new_article_path, class: "btn btn-xs btn-primary" %>
+<%= link_to "Create New Article", new_article_path, class: "btn btn-lg btn-primary" %>
 <% else %>
 <%= nil %>
 <% end %>
