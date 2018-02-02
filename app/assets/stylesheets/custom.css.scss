@@ -227,6 +227,14 @@ button{
   
 }
 
+
+
+button:hover {
+color: #FFF;
+	background-color: #000;
+	border: 1px solid #000
+}
+
 .covers{
     display: flex;
     flex-wrap: wrap;
