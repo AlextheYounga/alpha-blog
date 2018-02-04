@@ -1,28 +1,72 @@
-//ALL NAVBAR STUFF BELOW
+////////////////////NAVBAR//////////////////////////////
 
-$navbar-default-bg: #212529;
+$navbar-default-bg: #f5f5f5;
 $navbar-margin-bottom: -20px; 
 //The above code is going directly into the hidden bootstrap files that you don't have access to. Can also use !important to override them. 
 
 .navbar-default {
-font-weight: bold;}
+  border: 1px solid #e3e3e3;
+  margin-top: -10px;
+}
+
+.navbar-collapse{
+  margin-top: 10px;
+}
 
 #right-menu {
   a {
-    color: white;
+    color: black;
+    font-family: "Libre Baskerville",serif;
+    font-size: 0.9em;
   }
 }
 
-/*.right-menu-container  {
-  padding-right: 8cm;
-}*/
-
 #logo {
-  color:white;
-  
+  color: black;
+  margin-top: 10px;
+  font-family: "Libre Baskerville",serif;
 }
 
 ////////////////////////////////////////HOME PAGE//////////////////////////////
+
+#title{
+ margin: 50px;
+}
+
+#hammock {
+  width: 400px;
+}
+
+#display-3 {
+  font-family: "Libre Baskerville",serif;
+  font-size: 4em;
+  color: #212529;
+}
+#header_sub {
+  max-width: 500px;
+  width: auto; 
+  color: #212529;
+  font-size: 1.6em;
+  font-family: "Libre Baskerville",serif;
+}
+
+  
+
+
+/////HOME POSTS////
+
+.row {
+  margin-right: 0 !important;
+  margin-left: 0 !important;
+}
+
+//////////////////////////ABOUT PAGE////////////////////////////
+#about_page {
+ font-family: "Libre Baskerville",serif;
+   p {
+     font-size: 1.2em;
+   }
+}
 
 #headshot {
   width: 250px;
@@ -31,67 +75,6 @@ font-weight: bold;}
 }
 }
 
-
-///////////////TITLE/////////////////
-
-
-
-#display-3 {
-  font-weight: bold;
-  font-size: 4em;
-  color: #212529;
-  padding-left: 15px;
-  
-  
-  
-  
-  
-}
-#HeaderSub {
-  max-height: 80px;
-  width: auto; 
-  max-width: 750px;
-  color: #212529;
-  font-size: 1.6em;
-  font-weight: bold;
-
-  
-  
-} 
-
-.jumbotron {
-  background-image: asset-url('thumbsup.jpg');
-  background-repeat:no-repeat;
-  background-position:center center;
- // -webkit-background-size:cover;
-  //-moz-background-size:cover;
-  //-o-background-size:cover;
-  background-size:cover;
-  max-height: 575px;
-  height:auto;
-  min-height: 420px;
-  
-  
-  
-  .container-fluid {
-   //Holds the display-3 and HeaderSub
-    margin-top: -10px;
-  }
-}
-
-//////////////////HOME POSTS///////////////////////
-
-
-
-//This took a while to figure out; the nth-of-type must follow the .post-teaser
-/* Doesn't seem to work with embedded ruby
-.post-teaser:nth-of-type(odd) {
-  background-color: #e9ecef;
-}
-*/
-
-
-//////////////////////////ABOUT PAGE////////////////////////////
 
 #about-jumbo {
   background-image: asset-url('grand_canyon2.jpg');
@@ -111,14 +94,11 @@ font-weight: bold;}
 
 ///////////////////PAGE HEADERS///////////////////////////
  
-#PageHeader {
+#page_header {
   margin-top: 1cm;
-  font-weight: bold;
+  font-family: "Libre Baskerville",serif;
   font-size: 3.5em;
 }
-
-
-
 
 
 ///////////////////////ARTICLES///////////////////////
@@ -216,14 +196,14 @@ a, a:hover {
 }
 
 button{
-  border: 2px solid black;
+  border: 2px solid #e3e3e3;
   border-radius: 40px; 
-  background-color: white;
+  background-color: #f5f5f5;
   display: inline-block;
   padding: 10px;
   width: 150px;
   overflow: visible;
-  margin: 5px auto !important; //This ovverides bootstrap css
+  margin: 5px auto !important; 
   
 }
 
@@ -238,13 +218,9 @@ color: #FFF;
 .covers{
     display: flex;
     flex-wrap: wrap;
-    margin: 5%;
     
   div {
     margin: 2%;
-    //padding-left: 15px;
-    //padding-bottom: 10px;
-    
   }
   
   img {
@@ -253,11 +229,13 @@ color: #FFF;
     padding: 5px; /* Some padding */
     width: 200px;
   }
-  
   #audio{
     width: 225px;
   }
-   
+  
+  @media only screen and (max-width: 500px) {
+    width: 80pxs;
+  }
 }
 
 
@@ -268,6 +246,8 @@ color: #FFF;
 
 
 /*COLORS*/
-//color: #337ab7;
-//color: #121212
-//color: #eaeaea
+//color: #337ab7; (hyperlink blue)
+//color: #121212 (black)
+//color: #eaeaea (blue)
+//color: #f5f5f5 (grey)
+//border-color: #e3e3e3 (grey)
