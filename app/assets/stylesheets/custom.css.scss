@@ -9,6 +9,10 @@ $navbar-margin-bottom: -20px;
   margin-top: -10px;
 }
 
+#navbar_button {
+  float: left;
+}
+
 .navbar-collapse{
   margin-top: 10px;
 }
@@ -29,15 +33,17 @@ $navbar-margin-bottom: -20px;
 
 ////////////////////////////////////////HOME PAGE//////////////////////////////
 
-#title{
- margin: 50px;
+#header{
+ padding-top: 40px;
+ padding-bottom: 60px;
+ margin: 0 auto;
 }
 
 #hammock {
-  width: 400px;
+  width: 275px;
 }
 
-#display-3 {
+#name {
   font-family: "Libre Baskerville",serif;
   font-size: 4em;
   color: #212529;
@@ -138,6 +144,12 @@ $navbar-margin-bottom: -20px;
   padding-top: 5px;
   border-top: 1px solid #212529;
   clear: both;
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+
+#footer_container {
+  padding-right: 0 !important;
 }
 
 //SOCIAL MEDIA//
