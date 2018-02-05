@@ -4,9 +4,9 @@
   <%# end %>
 
 </br>
-<h1 id="page_header" align="center">All Articles</h1>
+<h1 id="page-header" align="center">All Articles</h1>
 
-<div align="center" id="CreateNew"> 
+<div align="center" id="create-button"> 
 <% if logged_in? %>
 <%= link_to "Create New Article", new_article_path, class: "btn btn-lg btn-primary" %>
 <% else %>
@@ -16,20 +16,19 @@
 <!-- Because there's |article| as the key, we have to refer to each article as (article) not (@article)-->
 
 <% @articles.each do |article| %>
-  <div class="row">
-    <div class="col-xs-8 col-xs-offset-2">
-      <div class= "well well-lg">
-        <div class= "article-title" id="post-title">
-          <%= link_to article.title, article_path(article) %>
-        </div>
-        
-        <div class="article-body">
-          <%= truncate(article.description, length: 100) %>
-          <div class= "article-meta-details">
-            <small>Created<%#= article.user.username if article.user %>
-                              <%= time_ago_in_words(article.created_at) %> ago, 
-                              Last updated: <%= time_ago_in_words(article.updated_at) %> ago </small>
+   <div class="row">
+      <div id="article-div" class="col-xs-8">
+        <div class= "well well-lg">
+          <div class= "article-title" id="post-title">
+            <%= link_to article.title, article_path(article) %>
           </div>
+        
+          <div class="article-body">
+            <%= truncate(article.description, length: 100) %>
+            <div class= "article-meta-details">
+              <small>Created<%#= article.user.username if article.user %>
+                                <%= time_ago_in_words(article.created_at) %> ago, 
+                                Last updated: <%= time_ago_in_words(article.updated_at) %> ago </small>
           
            
    <div id="article actions" class="article-actions">
@@ -44,11 +43,13 @@
         <% end %>
             
                                         
-          
+          </div>
         </div>
       </div>
     </div>
   </div>
 </div>
+
+</br>
 
 <% end %>

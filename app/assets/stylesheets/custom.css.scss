@@ -9,7 +9,7 @@ $navbar-margin-bottom: -20px;
   margin-top: -10px;
 }
 
-#navbar_button {
+#navbar-button {
   float: left;
 }
 
@@ -27,6 +27,7 @@ $navbar-margin-bottom: -20px;
 
 #logo {
   color: black;
+  font-size: 0.9em;
   margin-top: 10px;
   font-family: "Libre Baskerville",serif;
 }
@@ -48,7 +49,7 @@ $navbar-margin-bottom: -20px;
   font-size: 4em;
   color: #212529;
 }
-#header_sub {
+#header-sub {
   max-width: 500px;
   width: auto; 
   color: #212529;
@@ -57,17 +58,10 @@ $navbar-margin-bottom: -20px;
 }
 
   
-
-
-/////HOME POSTS////
-
-.row {
-  margin-right: 0 !important;
-  margin-left: 0 !important;
-}
-
 //////////////////////////ABOUT PAGE////////////////////////////
-#about_page {
+
+
+#about-page {
  font-family: "Libre Baskerville",serif;
    p {
      font-size: 1.2em;
@@ -100,7 +94,7 @@ $navbar-margin-bottom: -20px;
 
 ///////////////////PAGE HEADERS///////////////////////////
  
-#page_header {
+#page-header {
   margin-top: 1cm;
   font-family: "Libre Baskerville",serif;
   font-size: 3.5em;
@@ -108,8 +102,17 @@ $navbar-margin-bottom: -20px;
 
 
 ///////////////////////ARTICLES///////////////////////
+#article-div {
+  width: 100%;
+  margin-bottom: -20px !important;
+}
 
-#CreateNew {
+.row {
+  margin-right: 0 !important;
+  margin-left: 0 !important;
+}
+
+#create-button {
   margin: 20px;
 }
 
@@ -139,18 +142,14 @@ $navbar-margin-bottom: -20px;
 
 ///////////////////FOOTER////////////////////////
 
+
 .footer {
-  margin-top: 45px;
-  padding-top: 5px;
-  border-top: 1px solid #212529;
+
+  border-top: 1px solid #e3e3e3;
   clear: both;
-  padding-left: 0 !important;
-  padding-right: 0 !important;
+  margin-top: 45px;
 }
 
-#footer_container {
-  padding-right: 0 !important;
-}
 
 //SOCIAL MEDIA//
 
@@ -239,15 +238,12 @@ color: #FFF;
     border: 1px solid #ddd; /* Gray border */
     border-radius: 4px;  /* Rounded border */
     padding: 5px; /* Some padding */
-    width: 200px;
+    width: 150px;
   }
   #audio{
-    width: 225px;
+    width: 175px;
   }
   
-  @media only screen and (max-width: 500px) {
-    width: 80pxs;
-  }
 }
 
 

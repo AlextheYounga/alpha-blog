@@ -13,8 +13,8 @@
     <div align="center" id="header" class="container-fluid">
       <img id="hammock" align="center" <%= image_tag("hammock_cutout.png", :alt => "hammock_cutout") %>
       <h1 class="display-3" id="name">Alex Younger</h1>
-      <p align="center" id="header_sub">I build websites & applications and I write articles that make you question your existence.</p>
-      <q id="header_sub"><i>It is what it is, and it's pretty good.</i></q> 
+      <p align="center" id="header-sub">I build websites & applications and I write articles that make you question your existence.</p>
+      <q id="header-sub"><i>It is what it is, and it's pretty good.</i></q> 
     </div> 
         
   
@@ -24,7 +24,7 @@
      then @articles.each do |article|%>
   
     <div class="row">
-      <div id="post_teaser" class="col-xs-8 col-xs-offset-2">
+      <div id="article-div" class="col-xs-8">
         <div class= "well well-lg">
           <div class= "article-title" id="post-title">
             <%= link_to article.title, article_path(article) %>
