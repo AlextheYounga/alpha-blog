@@ -21,13 +21,13 @@ $navbar-margin-bottom: -20px;
   a {
     color: black;
     font-family: "Libre Baskerville",serif;
-    font-size: 0.9em;
+    font-size: 1em;
   }
 }
 
 #logo {
   color: black;
-  font-size: 0.9em;
+  font-size: 1em;
   margin-top: 10px;
   font-family: "Libre Baskerville",serif;
 }
@@ -229,6 +229,9 @@ color: #FFF;
 .covers{
     display: flex;
     flex-wrap: wrap;
+    margin-left: 5%;
+    margin-right: 5%;
+    
     
   div {
     margin: 2%;
@@ -241,7 +244,7 @@ color: #FFF;
     width: 150px;
   }
   #audio{
-    width: 175px;
+    width: 160px;
   }
   
 }
