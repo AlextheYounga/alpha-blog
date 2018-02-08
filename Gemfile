@@ -21,6 +21,15 @@ gem 'jquery-rails'
 gem 'turbolinks'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 gem 'jbuilder', '~> 2.0'
+# Allows parsing of a json 
+gem 'json'
+# Emulates a browser, but with Ruby. Will "visit" sites to scrape from.
+gem 'mechanize'
+# Will select DOM elements
+gem 'nokogiri'
+# Pretty prints results from nokogiri
+gem 'awesome_print'
+
 # bundle exec rake doc:rails generates the API under doc/api.
 gem 'sdoc', '~> 0.4.0', group: :doc
 
