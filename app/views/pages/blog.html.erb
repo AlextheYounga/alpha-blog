@@ -1,0 +1,19 @@
+<h1 id="page-header" align="center">The AlextheYounger Blog</h1>
+
+
+<%= @rss.items.each do |item|%>
+
+  <div class="row">
+      <div id="article-div" class="col-xs-8">
+        <div class= "well well-lg">
+          <div class= "article-title">
+            <p><%="#{item.title}"%></p>
+            <!--#{item.content_encoded}">-->
+          </div>
+        </div>
+      </div>
+  </div>  
+
+
+
+<% end %>

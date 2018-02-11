@@ -29,6 +29,8 @@ gem 'mechanize'
 gem 'nokogiri'
 # Pretty prints results from nokogiri
 gem 'awesome_print'
+#contacts json apis
+gem 'httparty'
 
 # bundle exec rake doc:rails generates the API under doc/api.
 gem 'sdoc', '~> 0.4.0', group: :doc
