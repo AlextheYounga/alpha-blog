@@ -116,79 +116,34 @@ $navbar-margin-bottom: -20px;
   margin: 20px;
 }
 
+
+#showpage-title {
+  margin-top: 5%;  //show page
+  color: #337ab7;
+  font-size: 2.6em;
+}
+
+
+.article-title {  
+    font-size: 2.4em;
+    text-align: center;
+  }
+
+.article-body {
+  margin-top: 0;
+  text-align: center;
+}
+
 .article-meta-details {
   border-top: 1px solid #eaeaea;
   margin-top: 15px;
+  text-align: center;
 }
 
 .article-actions {
   border-top: 1px solid #eaeaea;
   padding-top: 5px;
 }
-
-.description {
-  margin-top: 0;
-}
-
-#show-title {
-  margin-top: 5%;  //show page
-  color: #337ab7;
-  font-size: 2.6em;
-}
-
-#post-title {  
-    font-size: 2.4em;
-  }
-
-///////////////////FOOTER////////////////////////
-
-
-.footer {
-
-  border-top: 1px solid #e3e3e3;
-  clear: both;
-  margin-top: 45px;
-}
-
-
-//SOCIAL MEDIA//
-
-@import url('//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css');
-
-a, a:hover {
-	text-decoration: none;
-}
-
-.socialbtns, .socialbtns ul, .socialbtns li {
-  margin: 0;
-  padding: 5px;
-}
-
-.socialbtns li {
-    list-style: none outside none;
-    display: inline-block;
-}
-
-.socialbtns .fa {
-	width: 40px;
-	height: 36px;
-	color: #000;
-	background-color: #FFF;
-	border: 1px solid #000;
-	padding-top: 12px;
-	border-radius: 22px;
-	-moz-border-radius: 22px;
-	-webkit-border-radius: 22px;
-	-o-border-radius: 22px;
-}
-
-.socialbtns .fa:hover {
-	color: #FFF;
-	background-color: #000;
-	border: 1px solid #000;
-}
-
-
 
 //////////////////READING LIST CSS //////////////////////
 //$mainColor: #212529;
@@ -248,6 +203,58 @@ color: #FFF;
   }
   
 }
+
+
+///////////////////FOOTER////////////////////////
+
+
+.footer {
+
+  border-top: 1px solid #e3e3e3;
+  clear: both;
+  margin-top: 45px;
+}
+
+
+//SOCIAL MEDIA//
+
+@import url('//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css');
+
+a, a:hover {
+	text-decoration: none;
+}
+
+.socialbtns, .socialbtns ul, .socialbtns li {
+  margin: 0;
+  padding: 5px;
+}
+
+.socialbtns li {
+    list-style: none outside none;
+    display: inline-block;
+}
+
+.socialbtns .fa {
+	width: 40px;
+	height: 36px;
+	color: #000;
+	background-color: #FFF;
+	border: 1px solid #000;
+	padding-top: 12px;
+	border-radius: 22px;
+	-moz-border-radius: 22px;
+	-webkit-border-radius: 22px;
+	-o-border-radius: 22px;
+}
+
+.socialbtns .fa:hover {
+	color: #FFF;
+	background-color: #000;
+	border: 1px solid #000;
+}
+
+
+
 
 
 /////////////////BOOTSTRAP CONTENT - DON'T BOTHER////////////////////////
