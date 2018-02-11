@@ -2,9 +2,8 @@
 <!--This is the page rendered after the creation of an article -->
 
 <div class="container-fluid">
-  <h2 id="show-title" align="center"><%= @article.title %> </h2>
+  <h2 id="showpage-title" align="center"><%= @article.title %> </h2>
     <div class="well col-xs-8" id="article-div">
-      <h4 align="center" class="description"><strong>Description</strong></h4>
       <hr>
     
       <%= simple_format(@article.description) %>
