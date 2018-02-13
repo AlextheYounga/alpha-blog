@@ -1,0 +1,25 @@
+</br>
+<h1 id="page-header" align="center">The @AlextheYounger Blog</h1>
+</br>
+<main>
+  <% @rss.items.each do |item|%>
+    <div class="row">
+      <div id="article-div" class="col-xs-8">
+        <div class= "well well-lg">
+          <div class= "article-title">
+            <a href=<%="#{item.link}"%>> <%="#{item.title}"%></a>
+          </div>
+          
+          <div class= "article-meta-details">
+            <small>Created <%= time_ago_in_words "#{item.pubDate}"%> ago</small>
+          </div>
+        </div>  
+      </div>
+    </div>
+  </br>
+  <% end %>
+    
+    <center><a class="btn btn-xs btn-success" href="https://medium.com/@AlextheYounger/latest" role="button">
+      View All Posts
+    </a></center>
+</main>

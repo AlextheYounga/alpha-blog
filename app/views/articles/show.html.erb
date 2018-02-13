@@ -14,9 +14,9 @@
         
                                           data: {confirm: "Are you sure you want to delete the article?"},
                                           class: "btn btn-xs btn-danger" %>
-        <%= link_to "View all Articles", articles_path, class: "btn btn-xs btn-success"%>
+        
         <% else %>
-          <%= nil %>
+        <center><%= link_to "View all Articles", articles_path, class: "btn btn-xs btn-success"%></center>
         <% end %>
         
       </div>  
