@@ -21,12 +21,17 @@ class PagesController < ApplicationController
 
 
   def blog
-    require 'rubygems' 
+    require 'rubygems'
     require 'rss'
+    require 'open-uri'
     
-    @rss = RSS::Parser.parse('https://medium.com/feed/@AlextheYounger/', false)
+    @rss = RSS::Parser.parse('https://medium.com/feed/@AlextheYounger/')
+    
+    
+   
   end
-  
 end
+
+
 
 
