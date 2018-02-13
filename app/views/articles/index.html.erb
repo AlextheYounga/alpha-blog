@@ -24,7 +24,7 @@
           </div>
         
           <div class="article-body">
-            <%= truncate(article.description, length: 100) %>
+            <%= truncate(strip_tags(article.description), length: 420) %>
             <div class= "article-meta-details">
               <small>Created<%#= article.user.username if article.user %>
                                 <%= time_ago_in_words(article.created_at) %> ago, 

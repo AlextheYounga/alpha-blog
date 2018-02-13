@@ -31,12 +31,13 @@
           </div>
         
           <div class="article-body">
-            <%= truncate(article.description, length: 100) %>
-            <div class= "article-meta-details">
+            <%= truncate(strip_tags(article.description), length: 420) %>  <!-- strip_tags removes HTML tags from description-->
+          
+          <div class= "article-meta-details">
               <small>Created<%#= article.user.username if article.user %>
-                                <%= time_ago_in_words(article.created_at) %> ago, 
-                                Last updated: <%= time_ago_in_words(article.updated_at) %> ago </small>
-            </div>
+                     <%= time_ago_in_words(article.created_at) %> ago, 
+                     Last updated: <%= time_ago_in_words(article.updated_at) %> ago </small>
+          </div>
         </div>
       </div>
     </div>
