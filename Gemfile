@@ -23,12 +23,8 @@ gem 'turbolinks'
 gem 'jbuilder', '~> 2.0'
 # Allows parsing of a json 
 gem 'json'
-# Emulates a browser, but with Ruby. Will "visit" sites to scrape from.
-gem 'mechanize'
 # Will select DOM elements
 gem 'nokogiri'
-# Pretty prints results from nokogiri
-gem 'awesome_print'
 #contacts json apis
 gem 'httparty'
 
