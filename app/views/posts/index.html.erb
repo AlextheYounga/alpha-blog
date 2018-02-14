@@ -2,16 +2,22 @@
 <h1 id="page-header" align="center">The @AlextheYounger Blog</h1>
 </br>
 <main>
-  <% @rss.items.each do |item|%>
+  <% @posts.each do |post|%>
     <div class="row">
       <div id="article-div" class="col-xs-8">
         <div class= "well well-lg">
           <div class= "article-title">
-            <a href=<%="#{item.link}"%>> <%="#{item.title}"%></a>
+            <a href=<%="#{post.link}"%>> <%="#{post.title}"%></a>
+          </div>
+          
+          <div>
+            <p><%= truncate(strip_tags("#{post.content.html_safe}"), length: 500) %></p>
           </div>
           
           <div class= "article-meta-details">
-            <small>Created <%= time_ago_in_words "#{item.pubDate}"%> ago</small>
+            <small>
+              Created <%= time_ago_in_words "#{post.pubDate}"%> ago
+            </small>
           </div>
         </div>  
       </div>

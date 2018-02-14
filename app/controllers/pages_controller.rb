@@ -19,18 +19,6 @@ class PagesController < ApplicationController
   def readinglist
   end
 
-
-  def blog
-    require 'rubygems'
-    require 'rss'
-    require 'open-uri'
-    require 'nokogiri'
-    
-    @rss = RSS::Parser.parse('https://medium.com/feed/@AlextheYounger/')
-    
-    
-   
-  end
 end
 
 

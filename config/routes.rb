@@ -5,7 +5,9 @@ Rails.application.routes.draw do
 root 'pages#home'  #This is the route for the homepage; using root makes the server immediately redirect to this page
 get 'about', to: 'pages#about' #This is the about page
 get 'readinglist', to: 'pages#readinglist'
-get 'blog', to: 'pages#blog'
+
+
+resources :posts, only: [:index]
 
 resources :articles, except: [:signup] #this simple term resources allowed a:
 #new-article path

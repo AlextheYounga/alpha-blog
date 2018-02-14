@@ -1,18 +1,15 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <%#= before_filter if :loggedin? %>
-  <!--  <div id="article-actions"></div>-->
-  <%# end %>
 
 </br>
 <h1 id="page-header" align="center">All Articles</h1>
 
-<div align="center" id="create-button"> 
-<% if logged_in? %>
-<%= link_to "Create New Article", new_article_path, class: "btn btn-lg btn-primary" %>
-<% else %>
-<%= nil %>
-<% end %>
-</div>
+  <div align="center" id="create-button"> 
+    <% if logged_in? %>
+      <%= link_to "Create New Article", new_article_path, class: "btn btn-lg btn-primary" %>
+    <% else %>
+      <%= nil %>
+    <% end %>
+  </div>
 <!-- Because there's |article| as the key, we have to refer to each article as (article) not (@article)-->
 
 <% @articles.each do |article| %>
@@ -25,10 +22,11 @@
         
           <div class="article-body">
             <%= truncate(strip_tags(article.description), length: 420) %>
+            
             <div class= "article-meta-details">
-              <small>Created<%#= article.user.username if article.user %>
-                                <%= time_ago_in_words(article.created_at) %> ago, 
-                                Last updated: <%= time_ago_in_words(article.updated_at) %> ago </small>
+              <small>Created <%= time_ago_in_words(article.created_at) %> ago, 
+                     Last updated: <%= time_ago_in_words(article.updated_at) %> ago 
+              </small>
           
            
    <div id="article actions" class="article-actions">
