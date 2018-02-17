@@ -32,6 +32,7 @@
               <li><%= link_to "BLOG", posts_path %></li>
               <li><%= link_to "READING LIST", readinglist_path %></li>
               <li><%= link_to "TODAY I LEARNED", articles_path  %></li>
+              <li><%= link_to "PROJECTS", projects_path  %></li>
               <li role="separator" class="divider"></li>
                 <% if logged_in? %>
                   <li><%= link_to "LOG OUT", logout_path, method: :delete  %></li>

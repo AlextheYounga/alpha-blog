@@ -7,7 +7,6 @@ class PostsController < ApplicationController
     rss = RSS::Parser.parse('https://medium.com/feed/@AlextheYounger/')
     @posts = rss.items.map do |i|
       Post.new(i.title, i.content_encoded, i.pubDate, i.link)
-      
     end
     
   end
