@@ -175,11 +175,16 @@ color: #FFF;
 	border: 1px solid #000
 }
 
+#list-container {
+  padding-left: 0px !important;
+  padding-right: 0px !important;
+}
+
 .covers{
     display: flex;
     flex-wrap: wrap;
-    margin-left: 5%;
-    margin-right: 5%;
+    
+    
     
     
   div {
@@ -190,10 +195,7 @@ color: #FFF;
     border: 1px solid #ddd; /* Gray border */
     border-radius: 4px;  /* Rounded border */
     padding: 5px; /* Some padding */
-    width: 150px;
-  }
-  #audio{
-    width: 160px;
+    width: 145px;
   }
   
 }
