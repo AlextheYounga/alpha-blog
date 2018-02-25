@@ -9,7 +9,7 @@
   
    
 
-  <section id="home">
+  <section id="page-top">
     <div align="center" id="header" class="container-fluid">
       <img align="center" <%= image_tag("hammock_cutout - Copy.png", :alt => "hammock_cutout") %>
       <h1 class="display-3" id="name">Alex Younger</h1>
@@ -21,10 +21,11 @@
   
   
    <!-- BLOG -->
-  <section id="blog">
-    
+   
     <center id="button-style">
-      <%= link_to "Medium.com Blog", posts_path, class: "btn btn-lg btn-success", id:"medium-button" %>
+      <a class="btn btn-lg btn-success" href="https://medium.com/@AlextheYounger/latest" role="button" style="margin: 10px;">
+      Medium.com Blog</a>
+      <%#= link_to "Medium.com Blog", posts_path, class: "btn btn-lg btn-success", id:"medium-button" %>
       <%= link_to "Today I Learned Blog", articles_path, class: "btn btn-lg btn-primary" %>
     </center>
     
@@ -53,7 +54,7 @@
     </div>
   </div>
   <hr>
-</section>
+
 <% end %>
 
 <% end %>
@@ -62,7 +63,7 @@
 
 
 <!-- ABOUT -->
-  <section id="about">
+
     <div id: style="margin-bottom: 3cm;">
       <center id="section-header" style="margin-bottom: 10px;">About Me</center>
         <img> <%= image_tag("roundheadshot - Copy.png", :alt => "roundheadshot", id: "headshot") %>
@@ -80,11 +81,11 @@
     </div>
     </br>  
   <hr>
-  </section>
+ 
 
 
 <!-- READING LIST-->
-  <section id="reading-list">
+
     <div class="container">
       <center><h1 style="margin-bottom: 20px;" id="section-header">A Few of My Favorite Books</h1></center>
       <div class="row">
@@ -172,4 +173,3 @@
       }
     });
     </script>
-  </section>
