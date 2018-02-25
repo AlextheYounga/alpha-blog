@@ -6,32 +6,42 @@
   </head>
   
   
-  <body>
-   <main role="main">
+  
+   
 
-      
+  <section id="home">
     <div align="center" id="header" class="container-fluid">
       <img align="center" <%= image_tag("hammock_cutout - Copy.png", :alt => "hammock_cutout") %>
       <h1 class="display-3" id="name">Alex Younger</h1>
       <p align="center" id="header-sub">I build websites & applications and I write articles that make you question your existence.</p>
       <q id="header-sub"><i>It is what it is, and it's pretty good.</i></q> 
     </div> 
-        
+    <hr>
+  </section> 
   
-   
+  
+   <!-- BLOG -->
+  <section id="blog">
+    
+    <center id="button-style">
+      <%= link_to "Medium.com Blog", posts_path, class: "btn btn-lg btn-success", id:"medium-button" %>
+      <%= link_to "Today I Learned Blog", articles_path, class: "btn btn-lg btn-primary" %>
+    </center>
+    
+  <h1 align="center" style="margin-bottom: 20px;" id="page-header">Latest in: Today I Learned</h1>
    
   <%= if @articles.any? 
      then @articles.each do |article|%>
   
     <div class="row">
-      <div id="article-div" class="col-xs-8">
+      <div class="col-xs-8" id="article-div">
         <div class= "well well-lg">
           <div class= "article-title">
             <%= link_to article.title, article_path(article) %>
           </div>
         
           <div class="article-body">
-            <%= truncate(strip_tags(article.description), length: 420) %>  <!-- strip_tags removes HTML tags from description-->
+            <%= truncate(strip_tags(article.description), length: 280) %>  <!-- strip_tags removes HTML tags from description-->
           
           <div class= "article-meta-details">
               <small>Created<%#= article.user.username if article.user %>
@@ -42,17 +52,124 @@
       </div>
     </div>
   </div>
-</div>
+  <hr>
+</section>
+<% end %>
+
+<% end %>
+
+  
 
 
+<!-- ABOUT -->
+  <section id="about">
+    <div id: style="margin-bottom: 3cm;">
+      <center id="section-header" style="margin-bottom: 10px;">About Me</center>
+        <img> <%= image_tag("roundheadshot - Copy.png", :alt => "roundheadshot", id: "headshot") %>
+       
+      
+        <h2 class="col-xs-8" id="about-text">
+          I'm Alex. I design websites and applications in Austin, TX. My greatest strength is my love of learning, and my endless 
+          curiosity that motivates me to learn everything I can. </br></br>
+          
+          I have a unique story. I didn't always work in tech; my office used to be at an average height of 100 feet off the ground. 
+          </h2>
+          </br>
+        </br>
+        <center><%= link_to "My Story", about_path, class: "btn btn-lg btn-primary" %></center>
+    </div>
+    </br>  
+  <hr>
+  </section>
 
-        
-        
 
-        <hr>
-
-    </main>
+<!-- READING LIST-->
+  <section id="reading-list">
+    <div class="container">
+      <center><h1 style="margin-bottom: 20px;" id="section-header">A Few of My Favorite Books</h1></center>
+      <div class="row">
+        <div class="col-md-12">
+          <div class="carousel slide multi-item-carousel" id="theCarousel">
+            <div class="carousel-inner">
+             
+              <div class="item active">
+                <div class="col-xs-4"><a href="https://www.amazon.com/How-Win-Friends-Influence-People/dp/0671027034">
+                  <img src="https://images-na.ssl-images-amazon.com/images/I/51X7dEUFgoL._SX320_BO1,204,203,200_.jpg" 
+                  class="img-responsive"></a></div>
+              </div>
+              
+              <div class="item">
+                <div class="col-xs-4"><a href="https://www.amazon.com/How-Win-Friends-Influence-People/dp/0671027034">
+                      <img src="https://images-na.ssl-images-amazon.com/images/I/51mZNhKc9iL._SX329_BO1,204,203,200_.jpg" 
+                      class="img-responsive"></a></div>
+              </div>
+              
+              <div class="item">
+                <div class="col-xs-4"><a href="https://mises.org/library/foundations-morality">
+                    <img src="https://mises.org/sites/default/files/styles/slideshow/public/static-page/img/The%20Foundations%20of%20Morality_Hazlitt_20120224_bookstore.jpg?itok=nSJi2ad4" 
+                    class="img-responsive"></a></div>
+              </div>
+              
+              <div class="item">
+                <div class="col-xs-4"><a href="https://www.amazon.com/Antidote-Happiness-People-Positive-Thinking/dp/0865478015/ref=sr_1_1?s=books&ie=UTF8&qid=1515919681&sr=1-1&keywords=the+antidote+happiness+for+people+who+can%27t+stand+positive+thinking">
+                    <img src="https://images.gr-assets.com/books/1389478401l/13721709.jpg" 
+                    class="img-responsive"></a></div>
+              </div>
+              
+              <div class="item">
+                <div class="col-xs-4"><a href="https://www.amazon.com/Square-One-Foundations-Steve-Patterson-ebook/dp/B01M9JL27L/ref=sr_1_1?ie=UTF8&qid=1515980663&sr=8-1&keywords=square+one+steve+patterson">
+                  <img src="https://images-na.ssl-images-amazon.com/images/I/414bcSvR7AL._SX326_BO1,204,203,200_.jpg" 
+                  class="img-responsive"></a></div>
+              </div>
+              
+              <div class="item">
+                <div class="col-xs-4"><a href="https://mises.org/library/making-economic-sense">
+                  <img src="https://mises.org/sites/default/files/styles/slideshow/public/static-page/img/Making%20Economic%20Sense_Rothbard.jpg?itok=LdvdFE5Y" 
+                  class="img-responsive"></a></div>
+              </div>
+              
+              <div class="item">
+                <div class="col-xs-4"><a href="https://www.amazon.com/Guide-Good-Life-Ancient-Stoic/dp/0195374614/ref=sr_1_1?s=books&ie=UTF8&qid=1515918746&sr=1-1&keywords=a+guide+to+the+good+life">
+                  <img src="https://calazanblog-assets.s3.amazonaws.com/media/editor-uploads/a_guide_to_the_good_life_book_cover.jpg" 
+                  class="img-responsive"></a></div>
+              </div>
+              
+              <div class="item">
+                <div class="col-xs-4"><a href="https://www.amazon.com/Good-Profit-Creating-Successful-Companies/dp/1101904135/ref=sr_1_1?s=books&ie=UTF8&qid=1515919796&sr=1-1&keywords=good+profit+charles+koch">
+                  <img src="https://images-na.ssl-images-amazon.com/images/I/41ckVxWJzUL.jpg" 
+                  class="img-responsive"></a></div>
+              </div>
+              
+            </div>
+            <a class="left carousel-control" href="#theCarousel" data-slide="prev"><i class="glyphicon glyphicon-chevron-left"></i></a>
+            <a class="right carousel-control" href="#theCarousel" data-slide="next"><i class="glyphicon glyphicon-chevron-right"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
     
-  </body>
-  <% end %>
-  <% end %>
+    <center style="margin: 30px;"><%= link_to "Full Reading List", readinglist_path, class: "btn btn-lg btn-primary" %></center>
+            
+    <script>
+      // Instantiate the Bootstrap carousel
+    $('.multi-item-carousel').carousel({
+      interval: false
+    });
+    
+    // for every slide in carousel, copy the next slide's item in the slide.
+    // Do the same for the next, next item.
+    $('.multi-item-carousel .item').each(function(){
+      var next = $(this).next();
+      if (!next.length) {
+        next = $(this).siblings(':first');
+      }
+      next.children(':first-child').clone().appendTo($(this));
+      
+      if (next.next().length>0) {
+        next.next().children(':first-child').clone().appendTo($(this));
+      } else {
+      	$(this).siblings(':first').children(':first-child').clone().appendTo($(this));
+      }
+    });
+    </script>
+  </section>

@@ -1,3 +1,4 @@
+
 ////////////////////NAVBAR//////////////////////////////
 
 $navbar-default-bg: #f5f5f5;
@@ -11,6 +12,7 @@ $navbar-margin-bottom: -20px;
 
 #navbar-button {
   float: left;
+  width: 39%;
 }
 
 .navbar-collapse{
@@ -32,17 +34,18 @@ $navbar-margin-bottom: -20px;
   font-family: "Libre Baskerville",serif;
 }
 
-////////////////////////////////////////HOME PAGE//////////////////////////////
+////////////////////////////////////////HOME//////////////////////////////
 
 #header{
- padding-top: 40px;
- padding-bottom: 60px;
+ padding-top: 3cm;
+ padding-bottom: 3cm;
  margin: 0 auto;
+ font-family: "Libre Baskerville",serif;
 }
 
 
 #name {
-  font-family: "Libre Baskerville",serif;
+  
   font-size: 4em;
   color: #212529;
 }
@@ -51,18 +54,51 @@ $navbar-margin-bottom: -20px;
   width: auto; 
   color: #212529;
   font-size: 1.6em;
+  
+}
+
+#button-style {
   font-family: "Libre Baskerville",serif;
 }
 
+//////////////////////////ABOUT////////////////////////////
+
+
+#headshot {
+  margin-left: 8%; 
   
-//////////////////////////ABOUT PAGE////////////////////////////
+  @media only screen and (max-width: 800px) {
+    display: block;
+    margin-left:auto;
+    margin-right:auto;
+  }
+}
 
+#section-header {
+  margin-top: 3cm;
+  font-family: "Libre Baskerville",serif;
+  font-size: 3.5em;
+}
 
-#about-page {
- font-family: "Libre Baskerville",serif;
-   p {
-     font-size: 1.2em;
-   }
+#about-text{
+    font-family: "Libre Baskerville",serif;
+    float: right;
+    width: 55%;
+    margin-right: 10%;
+    margin-bottom: 20px;
+  
+  @media only screen and (max-width: 800px) {
+    text-align: center;
+    padding-top: 20px;
+    width: 100%;
+    margin-right: 0;
+  }
+}
+
+#about-story {
+  text-align: left; 
+  margin-left: 16%; 
+  margin-right: 16%;
 }
 
 #about-jumbo {
@@ -81,19 +117,25 @@ $navbar-margin-bottom: -20px;
 
 
 
-///////////////////PAGE HEADERS///////////////////////////
+///////////////////HEADERS///////////////////////////
  
 #page-header {
-  margin-top: 1cm;
+  margin-top: 2cm;
   font-family: "Libre Baskerville",serif;
   font-size: 3.5em;
 }
 
 
+
 ///////////////////////ARTICLES///////////////////////
 #article-div {
-  width: 100%;
   margin-bottom: -20px !important;
+  margin-left: 16.6%;
+  
+  @media only screen and (max-width: 800px) {
+    width: 100%;
+    margin-left: 0;
+  }
 }
 
 .row {
@@ -103,6 +145,7 @@ $navbar-margin-bottom: -20px;
 
 #create-button {
   margin: 20px;
+  font-family: "Libre Baskerville",serif;
 }
 
 
@@ -137,11 +180,79 @@ $navbar-margin-bottom: -20px;
 
 /////////////////POSTS//////////////////////
 
+#medium-banner {
+  margin-top: 60px;
+  margin-bottom: 20px;
+}
 
+#medium-button {
+  margin: 10px;
+}
+
+/////////////////CAROUSEL CSS///////////////////////////
+
+.multi-item-carousel{
+  .carousel-inner{
+    > .item{
+      transition: 500ms ease-in-out left;
+      }
+      
+      .img-responsive{
+        width: 160px;
+        max-height: 250px;
+        @media only screen and (min-width: 800px) {
+          margin-left: 25%;
+        }
+        
+        
+      }
+    
+    .active{
+      &.left{
+        left: -33%;
+      }
+      &.right{
+        left: 33%;
+      }
+    }
+    .next{
+      left: 33%;
+    }
+    .prev{
+      left: -33%;
+    }
+    @media all and (transform-3d), (-webkit-transform-3d) {
+      > .item{
+        // use your favourite prefixer here
+        transition: 500ms ease-in-out left;
+        transition: 500ms ease-in-out all;
+        backface-visibility: visible;
+        transform: none!important;
+      }
+    }
+  }
+  .carouse-control{
+    &.left, &.right{
+      background-image: none;
+    }
+  }
+}
+
+// non-related styling:
+body{
+  background: #333;
+  color: #ddd;
+}
+/*h1{
+  color: white;
+  font-size: 2.25em;
+  text-align: center;
+  margin-top: 1em;
+  margin-bottom: 2em;
+  text-shadow: 0px 2px 0px rgba(0, 0, 0, 1);
+} */
 
 //////////////////READING LIST CSS //////////////////////
-//$mainColor: #212529;
-
 
 .toggles{ 
 
@@ -164,6 +275,7 @@ button{
   width: 150px;
   overflow: visible;
   margin: 5px auto !important; 
+  font-family: "Libre Baskerville",serif;
   
 }
 
@@ -171,8 +283,8 @@ button{
 
 button:hover {
 color: #FFF;
-	background-color: #000;
-	border: 1px solid #000
+	background-color: #337ab7;
+	border: 1px solid #2e6da4;
 }
 
 #list-container {
@@ -205,7 +317,6 @@ color: #FFF;
 
 
 .footer {
-
   border-top: 1px solid #e3e3e3;
   clear: both;
   margin-top: 45px;

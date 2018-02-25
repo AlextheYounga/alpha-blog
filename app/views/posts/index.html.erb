@@ -1,7 +1,9 @@
-</br>
-<h1 id="page-header" align="center">The @AlextheYounger Blog</h1>
-</br>
-<main>
+<body>
+
+ <a href="https://medium.com/@AlextheYounger">
+   <center><%= image_tag("medium_banner.png", :alt => "medium_banner", id: "medium-banner") %>
+ </a>
+ 
   <% @posts.each do |post|%>
     <div class="row">
       <div id="article-div" class="col-xs-8">
@@ -11,7 +13,7 @@
           </div>
           
           <div>
-            <p><%= truncate(strip_tags("#{post.content.html_safe}"), length: 500) %></p>
+            <p><%= truncate(strip_tags("#{post.content.html_safe}"), length: 280) %></p>
           </div>
           
           <div class= "article-meta-details">
@@ -28,4 +30,4 @@
     <center><a class="btn btn-lg btn-success" href="https://medium.com/@AlextheYounger/latest" role="button">
       View All Posts
     </a></center>
-</main>
+</body>
