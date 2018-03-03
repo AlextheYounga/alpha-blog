@@ -264,7 +264,6 @@ body{
   overflow: hidden;
   text-align: center;
   
-  
 }
 
 button{
@@ -277,6 +276,13 @@ button{
   overflow: visible;
   margin: 5px auto !important; 
   font-family: "Libre Baskerville",serif;
+  
+  @media only screen and (max-width: 800px) {
+    width: 90px;
+    font-size: 11px !important;
+    margin: 4px auto !important;
+    padding: 7px;
+  }
   
 }
 
