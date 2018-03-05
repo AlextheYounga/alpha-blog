@@ -19,6 +19,31 @@ $navbar-margin-bottom: -20px;
   margin-top: 10px;
 }
 
+.dropdown-toggle {
+  float: left;
+  padding: 15px;
+  
+   @media only screen and (max-width: 800px) {
+      float: none;
+  }
+}
+
+.caret {
+  @media only screen and (max-width: 800px) {
+      transform: rotate(-90deg);
+      margin-bottom: 1px;
+  }
+}
+
+.dropdown-menu {
+  right: auto !important;
+    @media only screen and (max-width: 800px) {
+      position: fixed !important;
+      top: 11% !important;
+      left: 35% !important;
+    }
+}
+
 #right-menu {
   a {
     color: black;
@@ -77,6 +102,7 @@ $navbar-margin-bottom: -20px;
 
 #about-text{
     font-family: "Libre Baskerville",serif;
+    font-size: 25px;
     float: right;
     width: 55%;
     margin-right: 10%;

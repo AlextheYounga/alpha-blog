@@ -19,6 +19,9 @@ class PagesController < ApplicationController
   def readinglist
   end
   
+  def projects
+  end
+  
 end
 
 

@@ -21,15 +21,9 @@
   
   
    <!-- BLOG -->
-   
-    <center id="button-style">
-      <a class="btn btn-lg btn-success" href="https://medium.com/@AlextheYounger/latest" role="button" style="margin: 10px;">
-      Medium.com Blog</a>
-      <%#= link_to "Medium.com Blog", posts_path, class: "btn btn-lg btn-success", id:"medium-button" %>
-      <%= link_to "Today I Learned Blog", articles_path, class: "btn btn-lg btn-primary" %>
-    </center>
     
   <h1 align="center" style="margin-bottom: 20px;" id="page-header">Latest in: Today I Learned</h1>
+  <div align="center"><%= link_to "View All", articles_path, class: "btn btn-lg btn-success" %></div></br>
    
   <%= if @articles.any? 
      then @articles.each do |article|%>
