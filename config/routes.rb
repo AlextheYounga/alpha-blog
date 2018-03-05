@@ -7,6 +7,7 @@ get 'about', to: 'pages#about' #This is the about page
 get 'readinglist', to: 'pages#readinglist'
 
 
+resources :categories, except: [:destroy]
 
 resources :posts, only: [:index]
 
