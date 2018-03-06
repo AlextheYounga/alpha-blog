@@ -2,7 +2,7 @@
 
 
  <a href="https://medium.com/@AlextheYounger" align="center">
-   <%= image_tag("medium_banner.png", :alt => "medium_banner", id: "medium-banner") %>
+   <%= image_tag("medium_banner.png", :alt => "medium_banner", align: "center", id: "medium-banner") %>
  </a>
  
   <% @posts.each do |post|%>
@@ -14,7 +14,7 @@
           </div>
           
           <div>
-            <p><%= truncate(strip_tags("#{post.content.html_safe}"), length: 280) %></p>
+            <p><%= sanitize(truncate(strip_tags("#{post.content}"), length: 280)) %></p>
           </div>
           
           <div class= "article-meta-details">
