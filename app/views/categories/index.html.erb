@@ -1,0 +1,17 @@
+<!-- CATEGORIES INDEX -->
+
+<h1 id="page-header" align="center">All Blogs</h1>
+
+<div>
+<%= @categories.each do |category| %>
+      <div class="row">
+        <div id="category-div" class="col-xs-4">
+          <div class= "well well-lg">
+            <div class= "article-title">
+              <%= link_to "#{category.name}", category_path(category) %>
+            </div>
+        </div>
+      </div>
+    </div>
+<% end %>
+</div>
