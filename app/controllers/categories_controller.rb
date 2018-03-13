@@ -1,6 +1,6 @@
 class CategoriesController < ApplicationController
   
-  before_action :restrict
+  before_action :restrict, only: [:new, :edit]
   
   def index
     @categories = Category.all
@@ -16,9 +16,22 @@ class CategoriesController < ApplicationController
       end
   end
   
-  
   def new
     @category = Category.new
+  end
+  
+  def edit
+    @category = Category.find(params[:id])
+  end
+  
+  def update
+    @category = Category.find(params[:id])
+    if category.update(category_params)
+      flash[:success] = "Name was successfully updated"
+      redirect_to categories_path(@category)
+    else
+      render 'edit'
+    end
   end
   
   def show

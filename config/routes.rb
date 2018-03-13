@@ -7,10 +7,6 @@ get 'about', to: 'pages#about' #This is the about page
 get 'readinglist', to: 'pages#readinglist'
 get 'projects', to: 'pages#projects'
 
-resources :categories, except: [:destroy]
-
-resources :posts, only: [:index]
-
 resources :articles, except: [:signup] #this simple term resources allowed a:
 #new-article path
 #a post to create articles
@@ -27,10 +23,9 @@ get 'login', to: 'sessions#login'
 post 'login', to: 'sessions#create'
 delete 'logout', to: 'sessions#destroy'
 
+resources :categories, except: [:destroy]
 
-
-
-
+resources :posts, only: [:index]
 
 
 

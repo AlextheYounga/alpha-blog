@@ -10,6 +10,16 @@
             <div class= "article-title">
               <%= link_to "#{category.name}", category_path(category) %>
             </div>
+            <div align="center">
+              <small><%= pluralize(category.articles.count, "article") %></small>
+            </div>
+            <div align="center" class="article-actions">
+              <% if logged_in? %>
+              <%= link_to "Edit Category Name", edit_category_path(category), class: "btn btn-xs btn-primary" %>
+              <% else %>
+            <%= nil %>
+          <% end %>
+          </div>
         </div>
       </div>
     </div>

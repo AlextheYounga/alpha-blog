@@ -4,6 +4,8 @@
       <% else %>
         <%= nil %>
       <% end %>
+      
+      <%= link_to "Categories", categories_path, class: "btn btn-lg btn-primary" %>
     </div>
   <!-- Because there's |article| as the key, we have to refer to each article as (article) not (@article)-->
   
@@ -24,7 +26,7 @@
                 </small>
             
              
-           <div id="article actions" class="article-actions">
+           <div class="article-actions">
               <% if article.categories.any? %>
                 <p> Categories: <%= render article.categories %> </p>
               <% end %>
