@@ -5,11 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
   </head>
   
-  
-  
-   
 
-  <section id="page-top">
     <div align="center" id="header" class="container-fluid">
       <img align="center" <%= image_tag("hammock_cutout - Copy.png", :alt => "hammock_cutout") %>
       <h1 class="display-3" id="name">Alex Younger</h1>
@@ -17,7 +13,6 @@
       <q id="header-sub"><i>It is what it is, and it's pretty good.</i></q> 
     </div> 
     <hr>
-  </section> 
   
   
    <!-- BLOG -->
@@ -42,7 +37,11 @@
           <div class= "article-meta-details">
               <small>Created<%#= article.user.username if article.user %>
                      <%= time_ago_in_words(article.created_at) %> ago, 
-                     Last updated: <%= time_ago_in_words(article.updated_at) %> ago </small>
+                     Last updated: <%= time_ago_in_words(article.updated_at) %> ago
+              </small>
+              <% if article.categories.any? %>
+                <p> Categories: <%= render article.categories %> </p>
+              <% end %>
           </div>
         </div>
       </div>
@@ -80,9 +79,8 @@
 
 
 <!-- READING LIST-->
-
     <div class="container">
-      <center><h1 style="margin-bottom: 20px;" id="section-header">A Few of My Favorite Books</h1></center>
+      <center><h1 style="margin-bottom: 20px;" id="section-header">Some of My Favorite Books</h1></center>
       <div class="row">
         <div class="col-md-12">
           <div class="carousel slide multi-item-carousel" id="theCarousel">
@@ -145,26 +143,5 @@
     </div>
     
     <center style="margin: 30px;"><%= link_to "Full Reading List", readinglist_path, class: "btn btn-lg btn-primary" %></center>
-            
-    <script>
-      // Instantiate the Bootstrap carousel
-    $('.multi-item-carousel').carousel({
-      interval: false
-    });
-    
-    // for every slide in carousel, copy the next slide's item in the slide.
-    // Do the same for the next, next item.
-    $('.multi-item-carousel .item').each(function(){
-      var next = $(this).next();
-      if (!next.length) {
-        next = $(this).siblings(':first');
-      }
-      next.children(':first-child').clone().appendTo($(this));
-      
-      if (next.next().length>0) {
-        next.next().children(':first-child').clone().appendTo($(this));
-      } else {
-      	$(this).siblings(':first').children(':first-child').clone().appendTo($(this));
-      }
-    });
-    </script>
+  
+  <%= javascript_include_tag('carousel.js')%>

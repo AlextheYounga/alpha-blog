@@ -1,3 +1,6 @@
+<!-- CATEGORY SHOW PAGE -->
 <h1 align="center" id="page-header"> <%= "Today I Learned, In: " + @category.name %> </h1>
 
 <%= render 'articles/article', obj: @category_articles %>
+
+</br><div align="center"><%= link_to "View All", articles_path, class: "btn btn-lg btn-success" %></div>
