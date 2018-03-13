@@ -1,12 +1,14 @@
+<!-- ARTICLE SHOW PAGE -->
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<!--This is the page rendered after the creation of an article -->
 
 <div class="container-fluid">
   <h2 id="showpage-title" align="center"><%= @article.title %> </h2>
     <div class="well col-xs-8" id="article-div">
-      <hr>
     
       <%= simple_format(@article.description) %>
+      <% if @article.categories.any? %>
+        <p>Categories: <%= render @article.categories%></p>
+      <% end %>
       <div class="article-actions">
         <% if logged_in? %>
         <%= link_to "Edit this Article", edit_article_path(@article), class: "btn btn-xs btn-primary" %>

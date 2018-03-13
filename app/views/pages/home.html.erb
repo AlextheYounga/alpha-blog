@@ -36,7 +36,8 @@
           </div>
         
           <div class="article-body">
-            <%= truncate(strip_tags(article.description), length: 280) %>  <!-- strip_tags removes HTML tags from description-->
+            <%= truncate(strip_tags(article.description), length: 280) %>  
+            <!-- strip_tags removes HTML tags from description-->
           
           <div class= "article-meta-details">
               <small>Created<%#= article.user.username if article.user %>
