@@ -1,9 +1,9 @@
 <!-- CATEGORIES INDEX -->
 
-<h1 id="page-header" align="center">All Blogs</h1>
+<h1 id="page-header" align="center">Today I Learned, In:</h1>
 
-<div>
-<%= @categories.each do |category| %>
+
+<% @categories.each do |category| %> <!-- Mind the %= -->
       <div class="row">
         <div id="category-div" class="col-xs-4">
           <div class= "well well-lg">
@@ -13,5 +13,5 @@
         </div>
       </div>
     </div>
+  </br>
 <% end %>
-</div>
