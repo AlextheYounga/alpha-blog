@@ -1,5 +1,5 @@
 <!-- CATEGORY SHOW PAGE -->
-<h1 align="center" id="page-header"> <%= "Today I Learned, In: " + @category.name %> </h1>
+<h1 align="center" id="page-header"> <%="Articles In: " + @category.name %> </h1>
 
 <%= render 'articles/article', obj: @category_articles %>
 

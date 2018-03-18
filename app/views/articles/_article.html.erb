@@ -1,3 +1,4 @@
+<!-- PARTIAL FOR INDEX OF ARTICLES -->
 <div align="center" id="create-button"> 
       <% if logged_in? %>
         <%= link_to "Create New Article", new_article_path, class: "btn btn-lg btn-primary" %>
@@ -11,13 +12,13 @@
   
   <% obj.each do |article| %>
      <div class="row">
-        <div id="article-div" class="col-xs-8">
+        <div id="article-index-div" class="col-xs-8">
           <div class= "well well-lg">
             <div class= "article-title">
               <%= link_to article.title, article_path(article) %>
             </div>
           
-            <div class="article-body">
+            <div class="article-teaser-body">
               <%= truncate(strip_tags(article.description), length: 280) %>
               
               <div class= "article-meta-details">

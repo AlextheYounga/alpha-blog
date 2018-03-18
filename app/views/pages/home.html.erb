@@ -24,13 +24,13 @@
      then @articles.each do |article|%>
   
     <div class="row">
-      <div class="col-xs-8" id="article-div">
+      <div class="col-xs-8" id="article-index-div">
         <div class= "well well-lg">
           <div class= "article-title">
             <%= link_to article.title, article_path(article) %>
           </div>
         
-          <div class="article-body">
+          <div class="article-teaser-body">
             <%= truncate(strip_tags(article.description), length: 280) %>  
             <!-- strip_tags removes HTML tags from description-->
           
@@ -47,12 +47,10 @@
       </div>
     </div>
   </div>
-  <hr>
-
 <% end %>
 
 <% end %>
-
+<hr>
   
 
 
@@ -73,7 +71,6 @@
         </br>
         <center><%= link_to "My Story", about_path, class: "btn btn-lg btn-primary" %></center>
     </div>
-    </br>  
   <hr>
  
 
@@ -119,12 +116,6 @@
               <div class="item">
                 <div class="col-xs-4"><a href="https://mises.org/library/making-economic-sense">
                   <img src="https://mises.org/sites/default/files/styles/slideshow/public/static-page/img/Making%20Economic%20Sense_Rothbard.jpg?itok=LdvdFE5Y" 
-                  class="img-responsive"></a></div>
-              </div>
-              
-              <div class="item">
-                <div class="col-xs-4"><a href="https://www.amazon.com/Guide-Good-Life-Ancient-Stoic/dp/0195374614/ref=sr_1_1?s=books&ie=UTF8&qid=1515918746&sr=1-1&keywords=a+guide+to+the+good+life">
-                  <img src="https://calazanblog-assets.s3.amazonaws.com/media/editor-uploads/a_guide_to_the_good_life_book_cover.jpg" 
                   class="img-responsive"></a></div>
               </div>
               
