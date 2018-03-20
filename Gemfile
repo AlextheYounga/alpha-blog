@@ -27,7 +27,8 @@ gem 'json'
 gem 'nokogiri'
 #contacts json apis
 gem 'httparty'
-
+#stock price scraper
+gem 'stock_quote'
 
 # bundle exec rake doc:rails generates the API under doc/api.
 gem 'sdoc', '~> 0.4.0', group: :doc

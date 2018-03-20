@@ -2,22 +2,16 @@
 <!DOCTYPE html>
 <html>
 <head>
-
   <title>alextheyounger.me</title>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
-  
-  
-
-</head>
-<body>
   <%= render 'layouts/navigation' %>
-  <%= render 'layouts/messages' %> <!-- This renders the messages partial all throughout the application --> 
-  <%= yield %>  <!--This code allows this file to wrap all other views in the application -->
+</head>
 
-
-
+<body>
+  <%= render 'layouts/messages' %>
+  <%= yield %>  
 </body>
 
 <footer>

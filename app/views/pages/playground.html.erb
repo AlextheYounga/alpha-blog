@@ -1,0 +1,29 @@
+<h1 id="page-header" align="center">Playground</h1>
+<p align="center" id="need-font" style="font-size: 18px;">A space for random, fun, interactive projects</p>
+
+<!--<div class="container-fluid" id="project-box">-->
+  <h3 align="center" id="need-font">Stock Tracker</h3>
+    <div id="stock-lookup">
+      <%= form_tag "search_stocks", method: :get, id: "stock-lookup-form" do %>
+        <div class="form-group row no padding text-center col-md-10">
+          <div class="col-md-8">
+            <%= text_field_tag :stock, params[:stock], placeholder: "Stock ticker symbol", autofocus: true,
+                                        class: "form-control search-box input lg" %>
+          </div>
+          <div class="col-md-2">
+            <%= button_tag(type: :submit, class: "btn btn-sm btn-success") do %>
+              <i class="fa fa-search"></i> Search Stock Prices
+            <% end %>
+          </div>
+          <% end %>
+        </div>
+    </div>
+  <% if @stock %>
+    <div class="well-results-block">
+      <strong>Symbol: </strong><%= @stock.ticker%>
+      <strong>Name: </strong><%= @stock.name%>
+      <strong>Price: </strong><%= @stock.last_price%>
+    </div>
+  <% end %>
+
+
