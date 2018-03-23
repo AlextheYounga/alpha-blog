@@ -4,7 +4,7 @@
 <!--<div class="container-fluid" id="project-box">-->
   <h3 align="center" id="need-font">Stock Tracker</h3>
     <div id="stock-lookup">
-      <%= form_tag "search_stocks", method: :get, id: "stock-lookup-form" do %>
+      <%= form_tag search_stocks_path, method: :get, id: "stock-lookup-form" do %>
         <div class="form-group row no padding text-center col-md-10">
           <div class="col-md-8">
             <%= text_field_tag :stock, params[:stock], placeholder: "Stock ticker symbol", autofocus: true,
