@@ -20,8 +20,8 @@ gem 'turbolinks'
 gem 'jbuilder', '~> 2.0'
 # Allows parsing of a json 
 gem 'json'
-#stock price scraper
-gem 'stock_quote'
+#SOAP client (Simple Object Access Protocol)
+gem 'savon'
 
 # bundle exec rake doc:rails generates the API under doc/api.
 gem 'sdoc', '~> 0.4.0', group: :doc
