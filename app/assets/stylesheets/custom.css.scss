@@ -6,10 +6,17 @@
   float: none !important;
 }
 
-.button, #logo, #header, #button-style, #about-text, #page-header, #section-header, #create-button {
+//needs font
+.button, #logo, #header, #button-style, #about-text, #page-header, #section-header, #create-button, #need-font, #quoteGenius, 
+#quote-generator h2{
   font-family: "Libre Baskerville",serif;
 }
   
+#error {
+  margin-top: 5%;
+}
+
+
 
 ////////////////////NAVBAR//////////////////////////////
 $navbar-default-bg: #f5f5f5;
@@ -259,6 +266,76 @@ $navbar-margin-bottom: -20px;
     }
 }  
 
+/////////////////PLAYGROUND//////////////////////////
+//////////DAILYQUOTE/////////////
+#quote-generator{
+	width: 800px;
+	margin: 50px auto;
+	padding: 20px;
+	width: 50%;
+  border: 1px solid #e3e3e3;
+  border-radius: 4px;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
+}
+#quote-generator h2{
+	text-align:center;
+	
+}
+
+#quoteContainer{
+	width: 75%;
+	background: #fff;
+	padding: 10px;
+	margin: 30px auto;
+	text-align: center;
+  height: 175px;
+}
+#buttonContainer{
+	width: 100%;
+	text-align: center;
+}
+#quoteButton{
+  display: inline-block;
+	width: 200px;
+	margin-top: 10px;
+	border: 2px solid #e3e3e3;
+  background-color: #f5f5f5;
+  border-radius: 40px; 
+	font-family: inherit;
+	font-weight: bold;
+	padding: 5px;
+	text-decoration: none;
+	text-align: center;
+}
+
+#quoteButton:hover{
+	cursor: pointer;
+	color: #FFF;
+	background-color: #337ab7;
+	border: 1px solid #2e6da4;
+}
+#quoteButton:active{
+	cursor: pointer;
+}
+
+#quoteGenius{
+	font-style: italic;
+	font-weight: 600;
+	text-align: center;
+}
+
+
+/*MEDIA QUERIES*/
+@media screen and(max-width:760px){
+	#quoteButton,#addNew{
+		display: block;
+	}
+}
+
+/////////////////////////////////
+
+
 /////////////////CAROUSEL CSS///////////////////////////
 .multi-item-carousel{
   .carousel-inner{
@@ -326,8 +403,8 @@ body{
 
 button{
   border: 2px solid #e3e3e3;
-  border-radius: 40px; 
   background-color: #f5f5f5;
+  border-radius: 40px; 
   display: inline-block;
   padding: 10px;
   width: 150px;
