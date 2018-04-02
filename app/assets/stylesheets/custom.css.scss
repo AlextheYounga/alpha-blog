@@ -169,25 +169,11 @@ $navbar-margin-bottom: -20px;
 		margin-top: -30px;
 
 	}
-	a {
-	background: $primary-blue;
-	color: $text;
-	padding: 8px 20px;
-	text-transform: uppercase;
-	font-size: 14px;
-	margin-bottom: 20px;
-	margin-top: 10px;
-	display: inline-block;
-	border-radius: 2px;
-	box-shadow: 0 1px 3px -1px rgba(0, 0, 0, .6);
-
-	&:hover, &:active, &:focus {
-		background: darken($primary-blue, 10%);
-		color: $text;
-		text-decoration: none;
-	}
-
 }
+
+#fa-icon {
+  color: $primary-blue;
+  font-size: 35px;
 }
 
 .timeline {
@@ -352,12 +338,6 @@ $navbar-margin-bottom: -20px;
 	}
 }
 
-blockquote {
-	margin-top: 30px;
-	color: $secondary-text;
-	border-left-color: $primary-blue;
-	padding: 0 20px;
-}
 
 .date {
 	background: $primary-blue;
@@ -736,9 +716,6 @@ color: #FFF;
 }
 
 //SOCIAL MEDIA//
-
-@import url('//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css');
-
 a, a:hover {
 	text-decoration: none;
 }

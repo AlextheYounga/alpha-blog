@@ -27,7 +27,10 @@ gem 'json'
 gem 'nokogiri'
 #contacts json apis
 gem 'httparty'
-
+#font-awesome for icons
+gem 'font-awesome-rails', '~> 4.6', '>= 4.6.3.1'
+#more font icons
+gem 'material_icons'
 
 # bundle exec rake doc:rails generates the API under doc/api.
 gem 'sdoc', '~> 0.4.0', group: :doc

@@ -60,6 +60,8 @@ GEM
     erubis (2.7.0)
     execjs (2.7.0)
     ffi (1.9.18)
+    font-awesome-rails (4.7.0.3)
+      railties (>= 3.2, < 5.2)
     globalid (0.4.1)
       activesupport (>= 4.2.0)
     httparty (0.15.7)
@@ -79,6 +81,8 @@ GEM
       nokogiri (>= 1.5.9)
     mail (2.7.0)
       mini_mime (>= 0.1.1)
+    material_icons (2.2.1)
+      railties (>= 3.2)
     mini_mime (1.0.0)
     mini_portile2 (2.3.0)
     minitest (5.10.3)
@@ -176,10 +180,12 @@ DEPENDENCIES
   bootstrap-sass (~> 3.3.7)
   byebug
   coffee-rails (~> 4.1.0)
+  font-awesome-rails (~> 4.6, >= 4.6.3.1)
   httparty
   jbuilder (~> 2.0)
   jquery-rails
   json
+  material_icons
   nokogiri
   pg
   rails (= 4.2.5)
