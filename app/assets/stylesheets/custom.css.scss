@@ -1,5 +1,5 @@
 //////////////////SHARED///////////////////////////////
-#article-index-div, #article-show-div, #project-box {
+#article-index-div, #article-show-div, #project-box, #secondary-text {
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -8,7 +8,7 @@
 
 //needs font
 .button, #logo, #header, #button-style, #about-text, #page-header, #section-header, #create-button, #need-font, #quoteGenius, 
-#quote-generator h2{
+#quote-generator h2, #secondary-text{
   font-family: "Libre Baskerville",serif;
 }
   
@@ -151,7 +151,12 @@ $navbar-margin-bottom: -20px;
 }
 
 ///////////TIMELINE////////////////
-  
+
+#secondary-text {
+  margin-bottom: 1cm;
+  width: 200px;
+  font-size: 17px;
+}  
 
 #about-timeline {
   overflow-x: hidden;
