@@ -1,5 +1,5 @@
 //////////////////SHARED///////////////////////////////
-#article-index-div, #article-show-div, #project-box, #secondary-text {
+#article-index-div, #article-show-div, #project-box, #secondary-text, #quote-generator {
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -586,7 +586,6 @@ $navbar-margin-bottom: -20px;
 	text-align: center;
 }
 
-
 /*MEDIA QUERIES*/
 @media screen and(max-width:760px){
 	#quoteButton,#addNew{
@@ -594,6 +593,15 @@ $navbar-margin-bottom: -20px;
 	}
 }
 
+////////////MAP//////////////////
+
+#map {
+  margin-top: 2cm;
+  
+  @media screen and(max-width:760px){
+    width: 340px;
+  }
+}
 /////////////////////////////////
 
 
