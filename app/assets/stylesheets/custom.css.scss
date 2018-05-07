@@ -1,5 +1,6 @@
 //////////////////SHARED///////////////////////////////
-#article-index-div, #article-show-div, #project-box, #secondary-text, #quote-generator {
+#article-index-div, #article-show-div, #project-box, #secondary-text, #quote-generator, #map
+{
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -538,6 +539,10 @@ $navbar-margin-bottom: -20px;
   border-radius: 4px;
   -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
+  
+  @media only screen and (max-width: 800px){
+    width: 320px;
+  }
 }
 #quote-generator h2{
 	text-align:center;
@@ -560,6 +565,8 @@ $navbar-margin-bottom: -20px;
   display: inline-block;
 	width: 200px;
 	margin-top: 10px;
+	margin-left: auto;
+	margin-right: auto;
 	border: 2px solid $border-grey;
   background-color: $primary-grey;
   border-radius: 40px; 
@@ -596,11 +603,12 @@ $navbar-margin-bottom: -20px;
 ////////////MAP//////////////////
 
 #map {
-  margin-top: 2cm;
+  margin-top: 30px;
   
-  @media screen and(max-width:760px){
-    width: 340px;
-  }
+   @media screen and(max-width:760px){
+    width: 320px !important;
+    height: 300px !important;
+  } 
 }
 /////////////////////////////////
 
