@@ -1,5 +1,6 @@
 require 'rubygems' 
 require 'rss'
+require 'stock_quote'
 
 class PagesController < ApplicationController
 
@@ -10,17 +11,19 @@ class PagesController < ApplicationController
   end
 
 
-
   def about
   end
-
-
 
   def readinglist
   end
   
   def projects
   end
+  
+  def playground
+  end
+  
+  
   
 end
 
