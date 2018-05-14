@@ -22,6 +22,8 @@ class PagesController < ApplicationController
   def projects
   end
   
+  def playground
+  end
 end
 
 
