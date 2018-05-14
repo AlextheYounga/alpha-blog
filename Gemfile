@@ -31,6 +31,10 @@ gem 'httparty'
 gem 'font-awesome-rails', '~> 4.6', '>= 4.6.3.1'
 #more font icons
 gem 'material_icons'
+#for SOAP APIs
+gem 'savon'
+#stock_quote using IEX Trading API
+gem 'stock_quote'
 
 # bundle exec rake doc:rails generates the API under doc/api.
 gem 'sdoc', '~> 0.4.0', group: :doc
