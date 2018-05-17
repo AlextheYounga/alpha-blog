@@ -7,6 +7,7 @@ get 'about', to: 'pages#about' #This is the about page
 get 'readinglist', to: 'pages#readinglist'
 get 'projects', to: 'pages#projects'
 get 'playground', to: 'pages#playground'
+get 'search_stocks', to: 'stocks#search'
 
 resources :articles, except: [:signup] #this simple term resources allowed a:
 #new-article path
