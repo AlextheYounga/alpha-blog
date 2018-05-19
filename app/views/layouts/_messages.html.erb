@@ -1,6 +1,17 @@
+
 <% flash.each do |name, msg| %>
-  <ul>                              <!-- This block of code will create allow a message to be created on each page
-                                        specifically the error messages from failure to save an article to the database-->
-    <li><%= msg %></li>
-  </ul>
+  
+  <% if flash[:danger]%>
+    <ul class="alert alert-danger">                              
+      <li id="error"><%= msg %></li>
+    </ul>
+  
+  <% else %>
+    <ul calss="alert alert-success">                              
+      <li id="success"><%= msg %></li>
+    </ul>
+  
+  
   <% end %>
+<% end %>
+  
