@@ -273,6 +273,17 @@ $navbar-margin-bottom: -20px;
   display: block !important;
   margin-left: auto !important;
   margin-right: auto !important;
+  float: none !important;
+  padding-left: 3cm;
+  width: 66%;
+  
+}
+
+.results-block {
+  margin-bottom: 2cm;
+  margin-left: 20%;
+  width: fit-content;
+  
 }
 
 //////////MAP///////////////////
