@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  symbol: MyString
+  company_name: MyString
+  latest_price: 9.99
+
+two:
+  symbol: MyString
+  company_name: MyString
+  latest_price: 9.99

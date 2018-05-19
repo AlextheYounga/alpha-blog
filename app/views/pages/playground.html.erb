@@ -1,10 +1,40 @@
 <h1 align="center" id="page-header">Playground</h1>
 <p align="center" id="need-font" style="font-size: 18px;">A space for random, fun, interactive projects</p>
 
-
+  <!-- stock lookup -->
+  <h3 align="center" style="margin-top: 1.5cm;">Search for Stocks</h3>
+    <div>
+      <%= form_tag search_stocks_path, method: :get, id: "stock-lookup-form" do %>
+        <div id="stock-lookup" class="well form-group row no-padding text-center col-md-10">
+          <div class="col-md-8">
+            <%= text_field_tag :stock, params[:stock], placeholder: "Stock ticker symbol", autofocus: true,
+                                        class: "form-control search-box input lg" %>
+          </div>
+          <div class="col-md-2">
+            <%= button_tag(type: :submit, class: "btn btn-sm btn-success") do %>
+              <i class="fa fa-search"></i> Search Stock Prices
+            <% end %>
+          </div>
+          <% end %>
+        </div>
+      
+    <% if @stock %>
+    <div class="results-block">
+      <strong>Symbol: </strong><%= @stock.symbol%>
+      <strong>Name: </strong><%= @stock.company_name%>
+      <strong>Price: </strong><%= @stock.latest_price%>
+    </div>
+  </div>
+    
+  <% end %>
   
-    <iframe id="map" src="https://www.google.com/maps/d/embed?mid=1xjnP9IvzZ5YARi0kVmI3FsPeLi7Yb0y9" 
-    width="700" height="480"></iframe>
+  <!-- end stock-lookup -->
+
+
+  <!--map-->
+  <iframe id="map" src="https://www.google.com/maps/d/embed?mid=1xjnP9IvzZ5YARi0kVmI3FsPeLi7Yb0y9" 
+  width="700" height="480"></iframe>
+  <!-- end map -->
   
   
   <div id="quote-generator">
@@ -18,7 +48,6 @@
       <a href="#" id="quoteButton">Quote Me</a>
   </div><!--end buttonContainer-->
   </div><!--end quote generator-->
-  
   
 
   
