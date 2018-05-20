@@ -1,0 +1,16 @@
+ <% if @stock %>
+    <div class="well results-block">
+      <strong>Symbol: </strong><%= @stock.symbol%>
+      <strong>Name: </strong><%= @stock.company_name%>
+      <strong>Price: </strong><%= @stock.latest_price%>
+    </div>
+  </div>
+  <% end %>
+  
+<% flash.each do |name, msg| %>
+  <% if flash[:danger]%>
+    <ul id="stock-danger" class="alert alert-danger">                              
+      <li><%= msg %></li>
+    </ul>
+  <% end %>
+<% end %>

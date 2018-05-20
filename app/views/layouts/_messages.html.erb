@@ -1,6 +1,4 @@
-
 <% flash.each do |name, msg| %>
-  
   <% if flash[:danger]%>
     <ul class="alert alert-danger">                              
       <li id="error"><%= msg %></li>
@@ -10,8 +8,6 @@
     <ul calss="alert alert-success">                              
       <li id="success"><%= msg %></li>
     </ul>
-  
-  
   <% end %>
 <% end %>
   

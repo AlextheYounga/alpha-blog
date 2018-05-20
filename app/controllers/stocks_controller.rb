@@ -3,19 +3,12 @@ require 'stock_quote'
 class StocksController < ApplicationController
   
   def search
-    if params[:stock].present?
+    if params[:stock].blank?
+      flash.now[:danger] = "You have entered an empty search string"
+    else
       @stock = Stock.new_from_lookup(params[:stock])
-        if @stock
-          render 'pages/playground'
-        else
-          flash[:danger] = "You have entered an incorrect symbol"
-          redirect_to playground_path
-        end
-      
-        else
-          flash[:danger] = "You have entered an empty search string"
-          redirect_to playground_path
-        
+      flash.now[:danger] = "You have entered an incorrect symbol" unless @stock
     end
+    render partial: 'layouts/result'
   end
 end

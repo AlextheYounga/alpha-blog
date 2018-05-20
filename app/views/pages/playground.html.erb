@@ -4,7 +4,7 @@
   <!-- stock lookup -->
   <h3 align="center" style="margin-top: 1.5cm;">Search for Stocks</h3>
     <div>
-      <%= form_tag search_stocks_path, method: :get, id: "stock-lookup-form" do %>
+      <%= form_tag search_stocks_path, remote: true, method: :get, id: "stock-lookup-form" do %>
         <div id="stock-lookup" class="form-group row no-padding text-center col-md-10">
           <div class="col-md-8">
             <%= text_field_tag :stock, params[:stock], placeholder: "Stock ticker symbol", autofocus: true,
@@ -17,16 +17,9 @@
           </div>
           <% end %>
         </div>
-      
-    <% if @stock %>
-    <div class="well results-block">
-      <strong>Symbol: </strong><%= @stock.symbol%>
-      <strong>Name: </strong><%= @stock.company_name%>
-      <strong>Price: </strong><%= @stock.latest_price%>
-    </div>
-  </div>
-    
-  <% end %>
+      <div id="results">
+        <%= render 'layouts/result' %>
+      </div>
   
   <!-- end stock-lookup -->
 
@@ -53,3 +46,4 @@
   
 </div>
 <%= javascript_include_tag('quote_generator.js')%>
+<%= javascript_include_tag('result.js')%>
