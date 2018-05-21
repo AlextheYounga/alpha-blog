@@ -1,11 +1,16 @@
- <% if @stock %>
+<% if @stock %>
     <div class="well results-block">
       <strong>Symbol: </strong><%= @stock.symbol%>
       <strong>Name: </strong><%= @stock.company_name%>
-      <strong>Price: </strong><%= @stock.latest_price%>
+      <strong>Price: </strong><%= @stock.latest_price%>&nbsp;
+      <% if logged_in? %>
+        <%= link_to "Add to My WatchList", user_stocks_path(user: current_user, stock_symbol: @stock.symbol),
+                                                          class: "btn btn-xs btn-success", method: :post %>
+      <% else %>
+        <%= nil %>
     </div>
-  </div>
-  <% end %>
+    <% end  %>
+<% end %>
   
 <% flash.each do |name, msg| %>
   <% if flash[:danger]%>

@@ -1,5 +1,8 @@
 class Stock < ActiveRecord::Base
   
+  has_many :user_stocks
+  has_many :stocks, through: :user_stocks
+  
   def self.new_from_lookup(symbol)
     begin
       stock = StockQuote::Stock.quote(symbol)

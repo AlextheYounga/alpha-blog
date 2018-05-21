@@ -10,5 +10,6 @@ class StocksController < ApplicationController
       flash.now[:danger] = "You have entered an incorrect symbol" unless @stock
     end
     render partial: 'layouts/result'
+  
   end
 end

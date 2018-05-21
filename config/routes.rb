@@ -26,8 +26,8 @@ post 'login', to: 'sessions#create'
 delete 'logout', to: 'sessions#destroy'
 
 resources :categories, except: [:destroy]
-
 resources :posts, only: [:index]
+resources :user_stocks, only: [:create, :destroy]
 
 
 
