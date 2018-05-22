@@ -24,35 +24,7 @@
   <!-- end stock-lookup -->
   
   <!-- watchlist -->
-  <!--
-  <table class="table table-striped">
-    <thead>
-      <tr>
-        <th>Name</th>
-        <th>Symbol</th>
-        <th>Current Price</th>
-        <#% if logged_in? %>
-          <th>Actions</th>
-        <#% end %>
-      </tr>
-    </thead>
-  </table>
-  <tbody>
-    <#%@user_stocks.each do |user_stock| %>
-      <tr>
-        <td><%#= @user_stock.company_name%></td>
-        <td><%#= @user_stock.symbol%></td>
-        <td><%#= @user_stock.latest_price%></td>
-        <%# if logged_in? %>
-          <td> <%#= link_to "Delete from WatchList", user_stock_path(user_stock), method: :delete, 
-                  #  data: {confirm: "Are you sure?"}, class: "btn btn-xs btn-danger"%>
-          </td>
-          <#% #end %>
-      </tr>
-      <%# end %>
-  </tbody>
-  
-  
+  <%= render 'user_stocks/watchlist'%>
   <!-- end watchlist -->
 
 

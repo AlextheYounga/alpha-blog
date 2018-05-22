@@ -8,17 +8,16 @@ class UsersController < ApplicationController
   end
 
 
-    def create
+  def create
     @user = User.new(user_params)
-      if @user.save
+    if @user.save
     flash[:success] = "Welcome Alex"
       redirect_to articles_path
     else
       render 'signup'
-      end
-    end  
-    
-    
+    end
+  end  
+  
     
 
   private

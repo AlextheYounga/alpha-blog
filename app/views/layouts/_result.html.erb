@@ -1,7 +1,7 @@
 <% if @stock %>
     <div class="well results-block">
-      <strong>Symbol: </strong><%= @stock.symbol%>
-      <strong>Name: </strong><%= @stock.company_name%>
+      <strong>Symbol: </strong><%= @stock.company_name%>
+      <strong>Name: </strong><%= @stock.symbol%>
       <strong>Price: </strong><%= @stock.latest_price%>&nbsp;
       <% if logged_in? %>
         <%= link_to "Add to My WatchList", user_stocks_path(user: current_user, stock_symbol: @stock.symbol),

@@ -8,7 +8,6 @@ class ApplicationController < ActionController::Base
  def current_user
    @current_user ||= User.find(session[:user_id]) if session[:user_id]
     #the ||= prevents the session from bombing the database with repetitive hits
-    
  end
   
   

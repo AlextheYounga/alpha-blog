@@ -11,4 +11,12 @@ class UserStocksController < ApplicationController
       redirect_to playground_path
   end
   
+  def destroy
+    stock = Stock.find(params[:id])
+    @user_stock = UserStock.where(user_id: current_user.id, stock_id: stock.id).first
+    @user_stock.destroy
+    flash[:notice] = "Stock was successfully destroyed"
+    redirect_to playground_path
+  end
+  
 end

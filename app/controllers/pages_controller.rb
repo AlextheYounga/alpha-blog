@@ -21,8 +21,8 @@ class PagesController < ApplicationController
   end
   
   def playground
-    #@user = current_user 
-    #@user_stocks = current_user.stock 
+    @user_stocks = current_user.stocks
+     
   end
 
 end

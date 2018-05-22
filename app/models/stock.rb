@@ -1,7 +1,7 @@
 class Stock < ActiveRecord::Base
   
   has_many :user_stocks
-  has_many :stocks, through: :user_stocks
+  has_many :users, through: :user_stocks
   
   def self.new_from_lookup(symbol)
     begin
@@ -13,6 +13,10 @@ class Stock < ActiveRecord::Base
     rescue Exception => e
       return nil
     end
+  end
+  
+  def self.find_by_symbol(symbol)
+    where(symbol: stock_symbol).first
   end
   
 end
