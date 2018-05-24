@@ -4,7 +4,7 @@
       <strong>Name: </strong><%= @stock.symbol%>
       <strong>Price: </strong><%= @stock.latest_price%>&nbsp;
       <% if logged_in? %>
-        <%= link_to "Add to My WatchList", user_stocks_path(user: current_user, stock_symbol: @stock.symbol),
+        <%= link_to "Add to WatchList", user_stocks_path(user: current_user, stock_symbol: @stock.symbol),
                                                           class: "btn btn-xs btn-success", method: :post %>
       <% else %>
         <%= nil %>

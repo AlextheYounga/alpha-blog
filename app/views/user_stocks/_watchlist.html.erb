@@ -9,13 +9,13 @@
         <% end %>
       </tr>
     </thead>
-  </table> 
+  
   <tbody>
-    <% @user_stocks.each do |user_stock| %>
+    <% @user_stocks.each do |user_stock | %>
       <tr>
-        <td><%= @user_stocks.company_name%></td>
-        <td><%= @user_stocks.symbol %></td>
-        <td><%= @user_stocks.latest_price %></td>
+        <td><%= user_stock.company_name%></td>
+        <td><%= user_stock.symbol %></td>
+        <td><%= user_stock.latest_price %></td>
         <% if logged_in? %>
           <td> <%= link_to "Delete from WatchList", user_stocks_path(user_stock), method: :delete, 
                     data: {confirm: "Are you sure?"}, class: "btn btn-xs btn-danger"%>
@@ -23,4 +23,5 @@
           <% end %>
       </tr>
       <% end %>
-  </tbody>
+    </tbody>
+  </table> 

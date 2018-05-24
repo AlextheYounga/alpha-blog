@@ -15,8 +15,8 @@ class Stock < ActiveRecord::Base
     end
   end
   
-  def self.find_by_symbol(symbol)
-    where(symbol: stock_symbol).first
-  end
+  #def self.find_by_symbol(symbol)
+   #where(symbol: stock_symbol).first
+  #end
   
 end
