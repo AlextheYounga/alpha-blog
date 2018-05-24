@@ -2,7 +2,8 @@
 <p align="center" id="need-font" style="font-size: 18px;">A space for random, fun, interactive projects</p>
 
   <!-- stock lookup -->
-  <h3 align="center" style="margin-top: 1.5cm;">Search for Stocks</h3>
+<h3 align="center" id="need-font" style="margin-top: 1.5cm; font-size: 28px;">Search for Stocks</h3>
+  <p align="center" id="need-font">(Refresh Page if No Results)</p>  
     <div>
       <%= form_tag search_stocks_path, remote: true, method: :get, id: "stock-lookup-form" do %>
         <div id="stock-lookup" class="form-group row no-padding text-center col-md-10">
@@ -20,10 +21,10 @@
       <div id="results">
         <%= render 'layouts/result' %>
       </div>
-  
   <!-- end stock-lookup -->
   
   <!-- watchlist -->
+  <h3 align="center" id="need-font" style="margin-top: 2cm; font-size: 28px;">My Stock WatchList</h3>
   <%= render 'user_stocks/watchlist'%>
   <!-- end watchlist -->
 
