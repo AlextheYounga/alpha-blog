@@ -10,7 +10,8 @@
       </tr>
     </thead>
   
-  <tbody>
+<tbody>
+  <% if @user_stocks %>
     <% @user_stocks.each do |user_stock | %>
       <tr>
         <td><%= user_stock.company_name%></td>
@@ -23,5 +24,6 @@
           <% end %>
       </tr>
       <% end %>
+    <% end %>
     </tbody>
   </table> 
