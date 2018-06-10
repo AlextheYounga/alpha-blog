@@ -530,6 +530,17 @@ $navbar-margin-bottom: -20px;
     }
 }  
 
+  #project-banner {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    float: none !important;
+  
+      @media only screen and (max-width: 800px) {
+        width: 300px;
+  }
+} 
+
 /////////////////PLAYGROUND//////////////////////////
 //////////STOCK LOOKUP///////////////
 #stock-lookup{

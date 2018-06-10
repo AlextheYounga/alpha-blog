@@ -11,12 +11,8 @@ class Stock < ActiveRecord::Base
           latest_price: stock.latest_price,
           latest_time: stock.latest_time)
     rescue Exception => e
+    # Rescues all errors, an puts the exception object in `e
       return nil
     end
   end
-  
-  #def self.find_by_symbol(symbol)
-   #where(symbol: stock_symbol).first
-  #end
-  
 end
