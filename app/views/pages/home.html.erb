@@ -1,16 +1,12 @@
 <html lang="en">
   <title>alextheyounger.com</title>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  </head>
   
-
+  <body>
     <div align="center" id="header" class="container-fluid">
       <img align="center" <%= image_tag("hammock_cutout - Copy.png", :alt => "hammock_cutout") %>
-      <h1 class="display-3" id="name">Alex Younger</h1>
-      <p align="center" id="header-sub">I build websites & applications and I write articles that make you question your existence.</p>
-      <q id="header-sub"><i>It is what it is, and it's pretty good.</i></q> 
+        <h1 class="display-3" id="name">Alex Younger</h1>
+        <p align="center" id="header-sub">I build websites & applications and I write articles that make you question your existence.</p>
+        <q id="header-sub"><i>It is what it is, and it's pretty good.</i></q> 
     </div> 
     <hr>
   
@@ -18,7 +14,7 @@
    <!-- BLOG -->
     
   <h1 align="center" style="margin-bottom: 20px;" id="page-header">Latest in: Today I Learned</h1>
-  <div align="center"><%= link_to "View All", articles_path, class: "btn btn-lg btn-success" %></div></br>
+  <div align="center"><%= link_to "View All", articles_path, class: "btn btn-lg btn-success", id: "home-article-btn" %></div></br>
    
   <%= if @articles.any? 
      then @articles.each do |article|%>
@@ -56,7 +52,7 @@
 
 <!-- ABOUT -->
 
-    <div id: style="margin-bottom: 3cm;">
+    <div style="margin-bottom: 1.5cm;">
       <center id="section-header" style="margin-bottom: 10px;">About Me</center>
         <img> <%= image_tag("roundheadshot - Copy.png", :alt => "roundheadshot", id: "headshot") %>
        
@@ -136,3 +132,5 @@
     <center style="margin: 30px;"><%= link_to "Full Reading List", readinglist_path, class: "btn btn-lg btn-primary" %></center>
   
   <%= javascript_include_tag('carousel.js')%>
+  
+</body>

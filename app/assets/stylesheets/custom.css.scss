@@ -11,7 +11,7 @@
 .button, #logo, #header, #button-style, #about-text, #page-header, #section-header, #create-button, #need-font, #quoteGenius, 
 #quote-generator h2, #secondary-text{
   font-family: "Libre Baskerville",serif;
-}
+} 
 
 #error {
   margin-top: 4.6%;
@@ -91,7 +91,7 @@ $navbar-margin-bottom: -20px;
 ////////////////////////////////////////HOME//////////////////////////////
 #header{
  padding-top: 3cm;
- padding-bottom: 3cm;
+ padding-bottom: 1.5cm;
  margin: 0 auto;
 }
 
@@ -107,6 +107,11 @@ $navbar-margin-bottom: -20px;
   font-size: 1.6em;
   
 }
+
+#home-article-btn{
+  margin-bottom: 1.5cm;
+}
+
 
 
 //////////////////////////ABOUT////////////////////////////
