@@ -13,15 +13,15 @@
   
    <!-- BLOG -->
     
-  <h1 align="center" style="margin-bottom: 20px;" id="page-header">Latest in: Today I Learned</h1>
-  <div align="center"><%= link_to "View All", articles_path, class: "btn btn-lg btn-success", id: "home-article-btn" %></div></br>
+  <h1 align="center" style="margin-bottom: 20px;" id="section-header">Latest in: Today I Learned</h1>
+  <div align="center"><%= link_to "View All", articles_path, class: "btn btn-lg btn-success" %></div></br>
    
   <%= if @articles.any? 
      then @articles.each do |article|%>
   
     <div class="row">
       <div class="col-xs-8" id="article-index-div">
-        <div class= "well well-lg">
+        <div id="home-teaser-article" class= "well well-lg">
           <div class= "article-title">
             <%= link_to article.title, article_path(article) %>
           </div>
@@ -46,7 +46,7 @@
 <% end %>
 
 <% end %>
-<hr>
+<hr style="margin-top: 1.5cm;">
   
 
 
