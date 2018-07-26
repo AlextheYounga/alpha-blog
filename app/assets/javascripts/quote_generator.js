@@ -3,7 +3,7 @@
 		{
 			quote: "It takes a big man to cry, but it takes a bigger man to laugh at that man",
 			name:"Jack Handey, Deep Thoughts"
-	    },
+	    }, 
 	    {
 	    	quote:"The dumber people think you are, the more surprised they're going to be when you kill them",
 	    	name:"William Clayton"
