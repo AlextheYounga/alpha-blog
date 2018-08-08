@@ -1,8 +1,24 @@
 <h1 align="center" id="page-header">Playground</h1>
-<p align="center" id="need-font" style="font-size: 18px;">A space for random, fun, interactive projects</p>
+<p align="center" id="need-font" style="font-size: 18px;">
+  A space for random, fun, interactive projects
+</p>
 
+ <!--goal update tool -->
+ <div id="goal-update">
+   <form id="smileys">
+    <input type="radio" name="smiley" value="hopeless" class="hopeless">
+  	<input type="radio" name="smiley" value="worrisome" class="worrisome">
+  	<input type="radio" name="smiley" value="neutral" class="neutral">
+  	<input type="radio" name="smiley" value="confident" class="confident" checked="checked">
+  	<input type="radio" name="smiley" value="certain" class="certain">
+  	<div>You feel <span id="selection">confident</span> about completing this task on time</div>
+  </form>
+  
+</div>
+  <!-- end goal update -->
   <!-- stock lookup -->
-<h3 align="center" id="need-font" style="margin-top: 1.5cm; font-size: 28px;">Search for Stocks</h3>
+<div id="project-box">
+  <h3 align="center" id="need-font" style="margin-top: 1.5cm; font-size: 28px;">Search for Stocks</h3>
     <div>
       <%= form_tag search_stocks_path, remote: true, method: :get, id: "stock-lookup-form" do %>
         <div id="stock-lookup" class="form-group row no-padding text-center col-md-10">
@@ -20,13 +36,15 @@
       <div id="results">
         <%= render 'layouts/result' %>
       </div>
+  </div>
+
   <!-- end stock-lookup -->
   
   <!-- watchlist -->
   <h3 align="center" id="need-font" style="margin-top: 2cm; font-size: 28px;">My Stock WatchList</h3>
   <%= render 'user_stocks/watchlist'%>
   <!-- end watchlist -->
-
+</div>
 
   <!--map-->
   <div>
@@ -46,10 +64,8 @@
   <div id="buttonContainer">
       <a href="#" id="quoteButton">Quote Me</a>
   </div><!--end buttonContainer-->
-  </div><!--end quote generator-->
-  
-
-  
+</div><!--end quote generator-->
 </div>
+
 <%#= javascript_include_tag('quote_generator.js')%>
 <%#= javascript_include_tag('result.js')%>

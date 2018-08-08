@@ -3,26 +3,23 @@ class ArticlesController < ApplicationController #class name has to be CamelCase
 before_action :set_article, only: [:edit, :update, :show, :destroy] 
 before_action :restrict, only: [:edit, :update, :new]
  
-#THIS IS THE METHOD FOR THE INDEX, OR THE LISTING ARTICLES PAGE  
+ 
 def index
   #@articles = Article.all
   @articles = Article.order("created_at desc") 
 end
 
 
-# THIS IS THE METHOD FOR THE NEW PAGE
   def new   #it's called "new" because it's a new articles page
     @article = Article.new
   end
   
- 
-#THIS IS THE METHOD FOR THE EDIT PAGE
+
 def edit
   
 end
   
-
-#THIS IS THE METHOD FOR THE ARTICLE CREATION METHOD  
+  
 def create #this is for the process of sending an article to the database
   @article = Article.new(article_params) #This is the instance variable that will allow your article to be saved from the create method
   @article.user = User.last
@@ -35,7 +32,6 @@ def create #this is for the process of sending an article to the database
 end
 
 
-#THIS IS THE METHOD FOR THE ARTICLE UPDATE METHOD
 def update  
   if @article.update(article_params)
     flash[:notice] = "Article was successfully updated"
@@ -46,13 +42,11 @@ def update
 end
 
 
-#THIS IS THE METHOD FOR THE SHOW PAGE 
 def show
 
 end
 
 
-#THIS IS THE METHOD FOR THE DESTROY FUNCTION
 def destroy
   @article.destroy
   flash[:notice] = "Article was successfully deleted"

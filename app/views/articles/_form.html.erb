@@ -2,9 +2,6 @@
 <%= render 'shared/errors', obj: @article %>
 
 
- <!--the form_for helpers are rails view helpers for generating form markup; read more at guides.rubyonrails.org/form_helpers.html -->
-    <!--The @article instance variable will be initiated in the articles_controller.rb -->
-
 <div class='row'>
   <div class='col-xs-12'>
     <%= form_for(@article, :html => {class: "form-horizontal", role: "form"}) do |f| %>

@@ -9,7 +9,7 @@
 
 //needs font
 .button, #logo, #header, #button-style, #about-text, #page-header, #section-header, #create-button, #need-font, #quoteGenius, 
-#quote-generator h2, #secondary-text{
+#quote-generator h2, #secondary-text, #goal-update{
   font-family: "Libre Baskerville",serif;
 } 
 
@@ -557,7 +557,74 @@ $navbar-margin-bottom: -20px;
 }
 
 /////////////////PLAYGROUND//////////////////////////
+////////////GOAL TOOL////////////////
+// Standard styling, you can ignore this
+#goal-update {
+	align-items: center;
+	display: flex;
+	height: 315px;
+	justify-content: center;
+	margin: 0;
+	
+	div {
+		font-size: 18px;
+		margin-top: 15px;
+		text-align: center;
+	}
+}
+
+// Custom radio buttons
+form {
+	&#smileys {
+		input[type="radio"] {
+			-webkit-appearance: none;
+			width: 90px;
+			height: 90px;
+			border: none;
+			cursor: pointer;
+			transition: border .2s ease;
+			filter: grayscale(100%);
+			margin: 0 5px;
+			transition: all .2s ease;
+			
+			&:hover, &:checked {
+				filter:	grayscale(0);
+			}
+			
+			&:focus {
+				outline: 0;
+			}
+			
+			&.certain {
+				background: url('https://res.cloudinary.com/dxygx3iha/image/upload/v1533700856/happyhappy.png') center;
+				background-size: cover;
+			}
+			
+			&.confident {
+				background: url('https://res.cloudinary.com/turdlife/image/upload/v1492864443/happy_ampvnc.svg') center;
+				background-size: cover;
+			}
+			
+			&.neutral {
+				background: url('https://res.cloudinary.com/turdlife/image/upload/v1492864443/neutral_t3q8hz.svg') center;
+				background-size: cover;
+			}
+			&.worrisome {
+				background: url('https://res.cloudinary.com/turdlife/image/upload/v1492864443/sad_bj1tuj.svg') center;
+				background-size: cover;
+			}
+			&.hopeless {
+			  background: url('https://res.cloudinary.com/dxygx3iha/image/upload/v1533694534/sadface.png') center;
+			  background-size: cover;
+			}
+		}
+	}
+}
+//#00A3E0
+
 //////////STOCK LOOKUP///////////////
+
+
 #stock-lookup{
   display: block !important;
   margin-left: auto !important;
@@ -962,6 +1029,7 @@ pre[class*="language-"] {
 
 @import "bootstrap-sprockets";
 @import "bootstrap";
+@import "font-awesome";
 
 
 /*COLORS*/
