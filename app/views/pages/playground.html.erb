@@ -4,17 +4,38 @@
 </p>
 
  <!--goal update tool -->
+<div id="project-box" style="margin-bottom: 2cm;">
+  <h3 id="need-font" align="center">Task Update Tool Proof of Concept</h3>
  <div id="goal-update">
    <form id="smileys">
-    <input type="radio" name="smiley" value="hopeless" class="hopeless">
-  	<input type="radio" name="smiley" value="worrisome" class="worrisome">
-  	<input type="radio" name="smiley" value="neutral" class="neutral">
-  	<input type="radio" name="smiley" value="confident" class="confident" checked="checked">
-  	<input type="radio" name="smiley" value="certain" class="certain">
-  	<div>You feel <span id="selection">confident</span> about completing this task on time</div>
-  </form>
-  
+    <div>How confident are you about completing this task on time?</div>
+      <input type="radio" name="smiley" value="hopeless" class="hopeless">
+    	<input type="radio" name="smiley" value="worrisome" class="worrisome">
+    	<input type="radio" name="smiley" value="neutral" class="neutral">
+    	<input type="radio" name="smiley" value="confident" class="confident" checked="checked">
+    	<input type="radio" name="smiley" value="certain" class="certain">
+    </form>
+  </div>
+  <div id="goal-update">
+    <form id="smileys">
+    <div>How do you feel about your current progress?</div>
+      <input type="radio" name="smiley" value="hopeless" class="hopeless">
+    	<input type="radio" name="smiley" value="worrisome" class="worrisome">
+    	<input type="radio" name="smiley" value="neutral" class="neutral">
+    	<input type="radio" name="smiley" value="confident" class="confident" checked="checked">
+    	<input type="radio" name="smiley" value="certain" class="certain">
+    </form>
+  </div>
+    
+    <div id="question3">
+      <p>Do you think this task needs reconsideration or updating?</p>
+        <div>
+          <button class="astext">Yes</button>
+          <button class="astext" class="button active">No</button>
+        </div>
+    </div>
 </div>
+
   <!-- end goal update -->
   <!-- stock lookup -->
 <div id="project-box">
@@ -23,7 +44,7 @@
       <%= form_tag search_stocks_path, remote: true, method: :get, id: "stock-lookup-form" do %>
         <div id="stock-lookup" class="form-group row no-padding text-center col-md-10">
           <div class="col-md-8">
-            <%= text_field_tag :stock, params[:stock], placeholder: "Stock ticker symbol", autofocus: true,
+            <%= text_field_tag :stock, params[:stock], placeholder: "Stock ticker symbol", autofocus: false,
                                         class: "form-control search-box input lg" %>
           </div>
           <div class="col-md-2">

@@ -9,7 +9,7 @@
 
 //needs font
 .button, #logo, #header, #button-style, #about-text, #page-header, #section-header, #create-button, #need-font, #quoteGenius, 
-#quote-generator h2, #secondary-text, #goal-update{
+#quote-generator h2, #secondary-text, #goal-update, #question3{
   font-family: "Libre Baskerville",serif;
 } 
 
@@ -558,17 +558,16 @@ $navbar-margin-bottom: -20px;
 
 /////////////////PLAYGROUND//////////////////////////
 ////////////GOAL TOOL////////////////
-// Standard styling, you can ignore this
 #goal-update {
 	align-items: center;
 	display: flex;
-	height: 315px;
+	height: 212px;
 	justify-content: center;
 	margin: 0;
 	
 	div {
 		font-size: 18px;
-		margin-top: 15px;
+		margin: 20px;
 		text-align: center;
 	}
 }
@@ -620,7 +619,36 @@ form {
 		}
 	}
 }
-//#00A3E0
+
+#question3{
+	font-size: 18px;
+	text-align: center;
+	
+	p {
+		margin: 1cm 0 10px;
+	}
+	
+	div{
+		button{
+			border: 2px solid $border-grey;
+		  background-color: $primary-grey;
+		  border-radius: 40px; 
+		  display: inline-block;
+		  padding: 10px;
+		  width: 150px;
+			cursor: pointer;
+			transition: border .2s ease;
+			margin: 0 5px;
+			transition: all .2s ease;
+			
+				&:hover{
+					background-color: #00a1e1;
+					color: white;
+				}
+			}
+		}
+	}
+//#00a1e1
 
 //////////STOCK LOOKUP///////////////
 
@@ -794,7 +822,6 @@ body{
 
 //////////////////READING LIST CSS //////////////////////
 .toggles{ 
-
   max-width: 800px;
   margin: 0 auto;
   display: block;
@@ -802,32 +829,32 @@ body{
   overflow: hidden;
   text-align: center;
   
+		button{
+		  border: 2px solid $border-grey;
+		  background-color: $primary-grey;
+		  border-radius: 40px; 
+		  display: inline-block;
+		  padding: 10px;
+		  width: 150px;
+		  overflow: visible;
+		  margin: 5px auto !important; 
+		  
+		 button:hover {
+			color: #FFF;
+			background-color: $primary-blue;
+			border: 1px solid #2e6da4;
+}
+		  
+		  @media only screen and (max-width: 800px) {
+		    width: 90px;
+		    font-size: 11px !important;
+		    margin: 4px auto !important;
+		    padding: 7px;
+		  }
+		}
 }
 
-button{
-  border: 2px solid $border-grey;
-  background-color: $primary-grey;
-  border-radius: 40px; 
-  display: inline-block;
-  padding: 10px;
-  width: 150px;
-  overflow: visible;
-  margin: 5px auto !important; 
-  
-  @media only screen and (max-width: 800px) {
-    width: 90px;
-    font-size: 11px !important;
-    margin: 4px auto !important;
-    padding: 7px;
-  }
-  
-}
 
-button:hover {
-color: #FFF;
-	background-color: $primary-blue;
-	border: 1px solid #2e6da4;
-}
 
 #list-container {
   padding-left: 0px !important;
