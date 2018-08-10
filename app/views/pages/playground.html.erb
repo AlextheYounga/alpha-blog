@@ -41,7 +41,7 @@
 <div id="project-box">
   <h3 align="center" id="need-font" style="margin-top: 1.5cm; font-size: 28px;">Search for Stocks</h3>
     <div>
-      <%= form_tag search_stocks_path, remote: true, method: :get, id: "stock-lookup-form" do %>
+      <%= form_tag search_stocks_path, remote: true, method: :get do %>
         <div id="stock-lookup" class="form-group row no-padding text-center col-md-10">
           <div class="col-md-8">
             <%= text_field_tag :stock, params[:stock], placeholder: "Stock ticker symbol", autofocus: false,
