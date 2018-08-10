@@ -651,9 +651,7 @@ form {
 //#00a1e1
 
 //////////STOCK LOOKUP///////////////
-
-
-#stock-lookup{
+ .form-control.search-box.input-lg{
   display: block !important;
   margin-left: auto !important;
   margin-right: auto !important;
@@ -664,9 +662,9 @@ form {
    @media only screen and (max-width: 800px) {
     width: 300px;
     padding-left: 0;
+ 	}
  }
-  
-}
+
 
 .results-block, #stock-danger {
   margin-left: 25%;
@@ -674,14 +672,9 @@ form {
 }
 
 /////////////WATCHLIST////////////////
-#watchlist {
-  width: 800px;
+.table.table-striped {
   margin-left: auto;
   margin-right: auto;
-  
-   @media only screen and (max-width: 800px) {
-    width: 300px;
-}
 }
 
 //////////MAP///////////////////
