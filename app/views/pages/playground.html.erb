@@ -3,6 +3,24 @@
   A space for random, fun, interactive projects
 </p>
 
+<!-- halfway open book -->
+<div id="project-box" 
+      style="margin-bottom: 2cm; height: 270px">
+  <div id="book" class="book">
+    <div class="book-cover">
+      <img <%= image_tag("win_friends_influence.jpg", :alt => "Win Friends Influence People Open Book CSS", id: "book-img") %>
+    </div>
+  <div class="page"></div>
+    <div class="page">
+      <p>Be more concerned with your character than with your reputation, for your character is what you are, while your reputation 
+        is merely what others think you are. It isn't what you have or who you are or where you are or what you are doing that makes 
+        you happy or unhappy. It is what you think about it.</p>
+    </div>
+  </div>
+</div>
+
+<!-- end halfway open book -->
+
  <!--goal update tool -->
 <div id="project-box" style="margin-bottom: 2cm;">
   <h3 id="need-font" align="center">Task Update Tool Proof of Concept</h3>
@@ -87,6 +105,12 @@
   </div><!--end buttonContainer-->
 </div><!--end quote generator-->
 </div>
+
+<script>
+  document.getElementById('book').addEventListener('click', function() {
+  this.classList.toggle('open');
+});
+</script>
 
 <%#= javascript_include_tag('quote_generator.js')%>
 <%#= javascript_include_tag('result.js')%>

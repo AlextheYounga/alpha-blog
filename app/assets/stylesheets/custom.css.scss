@@ -557,6 +557,115 @@ $navbar-margin-bottom: -20px;
 }
 
 /////////////////PLAYGROUND//////////////////////////
+////////////HALFWAY OPEN BOOK///////////
+.book {
+  position: relative;
+  width: 10rem;
+  height: 13rem;
+  margin: 2em auto;
+  overflow: visible;
+  cursor: pointer;
+  transition: all 0.35s linear
+}
+.book-cover, .page, #book-img{
+  position: absolute;
+  width: 160px;
+  height: 208px;
+  backface-visibility: hidden;
+  transform-origin: left center;
+  transition: inherit;
+  box-shadow: 1px 1px 2px 0px rgba(0,0,0,0.2);
+}
+.book-cover, #book-img {
+  z-index: 100;
+  transform: perspective(700) 
+             rotateY(0deg);
+ 
+}
+.page {
+  padding: 1.1em;
+  font-family: 'PT Serif', serif;
+  font-size: 0.65em;
+  line-height: 1.2em;
+  color: #222;  
+  
+  &:before {
+    content: '';
+    height: 100%;
+    position: absolute;
+    width: 0;
+    top: 0;
+    background-color: rgba(0,0,0,0.1);
+    transition: inherit;
+  }
+  &:after {
+    content: '';
+    width: 100%;
+    height: 0;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    border-radius: 50%;
+    border: solid 0px transparent;
+    border-top-color: rgba(0,0,0,0.2);
+    transition: inherit;
+    box-shadow: 0px -13rem 0px 0px #fff;
+  }
+  &:nth-child(2) {
+    transform: perspective(700) 
+               rotateY(180deg) 
+               translateX(-100%);
+    background: #fff 
+                linear-gradient(90deg, 
+                rgba(0,0,0,0) 97%, 
+                rgba(0,0,0,0.1) 100%);
+    box-shadow: -1px 1px 2px 0px                          rgba(0,0,0,0.2);
+    
+    &:before { left: 0px; }
+    &:after  { left: 1px; }
+  }
+  &:nth-child(3) {
+    background: #fff 
+                linear-gradient(90deg, 
+                rgba(0,0,0,0.1) 0%, 
+                rgba(0,0,0,0) 3%);
+                border-left: solid 1px                      rgba(0,0,0,0.2);
+    
+    &:before { right: 1px; }
+    &:after  { left: -1px; }
+  }
+}
+
+.open {
+  transform: translateX(50%);
+ 
+  /* If you want to change the range of rotation, change the rotateY and perspective here */
+  .book-cover {
+    transform: perspective(700)
+               rotateY(-110deg);
+  }
+  .page {
+    &:nth-child(2) {
+      z-index: 200;
+      transform: perspective(800)
+                 rotateY(70deg)
+                 translateX(-100%);
+    }
+    &:before {
+      width: 3px;
+    }
+    &:after {
+      border-width: 3px;
+      bottom: -3px;
+    }
+  }
+}
+
+*, *:before, *:after { 
+  box-sizing: border-box; 
+}
+
+
 ////////////GOAL TOOL////////////////
 #goal-update {
 	align-items: center;
